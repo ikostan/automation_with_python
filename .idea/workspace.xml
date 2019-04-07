@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IntroToPython/variables_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/IntroToPython/variables_methods.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IntroToPython/variables_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="168">
+              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -99,7 +101,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.variables_methods">
+  <component name="RunManager" selected="Python.exercise_1">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -275,8 +277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IntroToPython/variables_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="168">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
         </state>
       </provider>
     </entry>
