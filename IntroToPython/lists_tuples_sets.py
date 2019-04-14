@@ -31,3 +31,11 @@ print(grades_set)
 for i, b in enumerate(grades_tuple):
     print("{0}: {1}".format(i, b))
 
+your_lottery_numbers = {1, 2, 3, 4, 5}
+winning_numbers = {1, 3, 4, 7, 9, 11}
+
+print("Intersection: {0}".format(your_lottery_numbers.intersection(winning_numbers)))
+print("Union: {0}".format(your_lottery_numbers.union(winning_numbers)))
+print("Intersection: {0}".format(your_lottery_numbers.difference(winning_numbers)))
+
+
