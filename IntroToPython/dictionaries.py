@@ -7,7 +7,7 @@ lottery_player = {
     "numbers": (13, 45, 66, 23, 22)
 }
 
-universities = {
+universities = [
     {
         "name": "Oxford",
         "location": "UK"
@@ -16,6 +16,7 @@ universities = {
         "name": "MIT",
         "location": "US"
     }
-}
+]
 
-sum(lottery_player["numbers"])
+print(sum(lottery_player["numbers"]))
+
