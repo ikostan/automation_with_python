@@ -4,7 +4,8 @@ my_variable = "hello"
 print(my_variable[0])
 
 for l in my_variable:
-    print(l, end='')  # print all letters on the same line
+    priny
+    t(l, end='')  # print all letters on the same line
 
 print()
 
