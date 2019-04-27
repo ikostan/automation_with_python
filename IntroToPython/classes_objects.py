@@ -33,5 +33,8 @@ class LotteryPlayer:
 
 
 player = LotteryPlayer("rolf", (5, 9, 12, 3, 1, 21))
+print(player.name)
 player_two = LotteryPlayer("max", (87, 99, 12, 3, 31, 21))
+player.name = "golf"
+print(player.name)
 
