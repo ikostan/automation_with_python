@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/IntroToPython/exercise_6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroToPython/student.py" beforeDir="false" afterPath="$PROJECT_DIR$/IntroToPython/student.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,20 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IntroToPython/student.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IntroToPython/exercise_6.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="504">
+              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -61,8 +52,8 @@
         <option value="$PROJECT_DIR$/IntroToPython/loops.py" />
         <option value="$PROJECT_DIR$/IntroToPython/dictionaries.py" />
         <option value="$PROJECT_DIR$/IntroToPython/classes_objects.py" />
-        <option value="$PROJECT_DIR$/IntroToPython/student.py" />
         <option value="$PROJECT_DIR$/IntroToPython/exercise_6.py" />
+        <option value="$PROJECT_DIR$/IntroToPython/student.py" />
       </list>
     </option>
   </component>
@@ -485,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntroToPython/lists_tuples_sets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IntroToPython/exercise_4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-147">
@@ -541,10 +525,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntroToPython/student.py">
+    <entry file="file://$PROJECT_DIR$/IntroToPython/lists_tuples_sets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        <state relative-caret-position="798">
+          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -552,6 +536,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntroToPython/student.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
         </state>
       </provider>
     </entry>
