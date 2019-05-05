@@ -3,6 +3,7 @@ from blog.blog import Blog
 
 
 class BlogTestCase(unittest.TestCase):
+
     def test_blog_title(self):
         title = 'Test'
         author = 'First Last'
@@ -55,7 +56,7 @@ class BlogTestCase(unittest.TestCase):
         title = 'Test'
         author = 'first last'
         new_blog = Blog(title, author)
-        expected = 'Test by First Last (0 posts)'
+        expected = 'Test by First Last (0 post)'
         self.assertEqual(expected, new_blog.__repr__())
 
     def test_repr_multiple_posts(self):
