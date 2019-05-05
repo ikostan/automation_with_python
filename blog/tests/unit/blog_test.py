@@ -28,6 +28,20 @@ class BlogTestCase(unittest.TestCase):
         expected = 'First Last'
         self.assertEqual(expected, new_blog.author)
 
+    def test_initial_posts_length(self):
+        title = 'Test'
+        author = 'first last'
+        new_blog = Blog(title, author)
+        expected_length = 0
+        self.assertEqual(expected_length, len(new_blog.posts))
+
+    def test_initial_posts_list(self):
+        title = 'Test'
+        author = 'first last'
+        new_blog = Blog(title, author)
+        expected_list = []
+        self.assertListEqual(expected_list, new_blog.posts)
+
 
 if __name__ == '__main__':
     unittest.main()
