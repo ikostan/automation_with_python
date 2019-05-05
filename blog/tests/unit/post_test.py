@@ -3,11 +3,17 @@ from blog.post import Post
 
 
 class PostTest(unittest.TestCase):
-    def test_create_post(self):
+
+    def test_assert_title(self):
         title = 'Test'
         content = 'Test Content'
         new_post = Post(title, content)
         self.assertEqual(title, new_post.title)
+
+    def test_assert_content(self):
+        title = 'Test'
+        content = 'Test Content'
+        new_post = Post(title, content)
         self.assertEqual(content, new_post.content)
 
 
