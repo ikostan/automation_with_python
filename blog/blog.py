@@ -9,4 +9,13 @@ class Blog:
         # All the posts of the related author
         self.posts = []
 
+    def __repr__(self):
+        pass
+
+    def create_post(self, title: str, content: str):
+        pass
+
+    def json(self):
+        pass
+
 
