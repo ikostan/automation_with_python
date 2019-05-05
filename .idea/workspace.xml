@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/automation_with_python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/automation_with_python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/tests/unit/post_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/post.py" afterDir="false" />
     </list>
@@ -18,11 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/post.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/tests/unit/post_test.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,6 +44,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -69,6 +81,7 @@
         <option value="$PROJECT_DIR$/blog/app.py" />
         <option value="$PROJECT_DIR$/blog/blog.py" />
         <option value="$PROJECT_DIR$/blog/post.py" />
+        <option value="$PROJECT_DIR$/blog/tests/unit/post_test.py" />
       </list>
     </option>
   </component>
@@ -96,6 +109,19 @@
               <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -105,7 +131,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/IntroToPython/complex_decorators.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/tests/unit/post_test.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -125,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.complex_decorators">
+  <component name="RunManager" selected="Python tests.Unittests in post_test.py">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -441,6 +467,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in post_test.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="automation_with_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\superadmin\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/blog/tests/unit/post_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.exercise_1" />
       <item itemvalue="Python.lists_tuples_sets" />
@@ -456,6 +497,7 @@
       <item itemvalue="Python.complex_decorators" />
       <item itemvalue="Python.args_kwargs" />
       <item itemvalue="Python.variables_methods" />
+      <item itemvalue="Python tests.Unittests in post_test.py" />
     </list>
   </component>
   <component name="StructureViewFactory">
@@ -490,6 +532,17 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_post_test_py - 2019.05.05 at 10h 45m 43s.xml">
+      <configuration name="Unittests in post_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_post_test_py - 2019.05.05 at 10h 48m 59s.xml">
+      <configuration name="Unittests in post_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_post_test_py - 2019.05.05 at 10h 49m 40s.xml">
+      <configuration name="Unittests in post_test.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -503,12 +556,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.15997024" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.15997024" />
       <window_info id="Structure" order="1" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30769232" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30769232" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39856374" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -738,8 +791,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/post.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/tests/unit/post_test.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
