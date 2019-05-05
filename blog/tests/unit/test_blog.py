@@ -43,11 +43,27 @@ class BlogTestCase(unittest.TestCase):
         expected_list = []
         self.assertListEqual(expected_list, new_blog.posts)
 
+    def test_multiple_posts_list(self):
+        title = 'Test'
+        author = 'first last'
+        new_blog = Blog(title, author)
+        new_blog.posts = ['post #1', 'post #2']
+        expected_list = ['post #1', 'post #2']
+        self.assertListEqual(expected_list, new_blog.posts)
+
     def test_repr(self):
         title = 'Test'
         author = 'first last'
         new_blog = Blog(title, author)
         expected = 'Test by First Last (0 posts)'
+        self.assertEqual(expected, new_blog.__repr__())
+
+    def test_repr_multiple_posts(self):
+        title = 'Test'
+        author = 'first last'
+        new_blog = Blog(title, author)
+        new_blog.posts = ['post #1', 'post #2']
+        expected = 'Test by First Last (2 posts)'
         self.assertEqual(expected, new_blog.__repr__())
 
 
