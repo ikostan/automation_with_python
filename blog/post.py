@@ -1,7 +1,7 @@
 class Post:
     def __init__(self, title: str, content: str):
         # Post Tile (capitalized)
-        self.title = title.capitalize()
+        self.title = ' '.join(x.capitalize() for x in title.split(' '))
 
         # Post Content
         self.content = content

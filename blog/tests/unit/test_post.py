@@ -11,10 +11,11 @@ class PostTestCase(unittest.TestCase):
         self.assertEqual(title, new_post.title)
 
     def test_assert_title_capitalized(self):
-        title = 'test'
+        title = 'test title'
         content = 'Test Content'
         new_post = Post(title, content)
-        self.assertEqual(title.capitalize(), new_post.title)
+        expected_title = 'Test Title'
+        self.assertEqual(expected_title, new_post.title)
 
     def test_assert_content(self):
         title = 'Test'

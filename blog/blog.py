@@ -1,7 +1,7 @@
 class Blog:
     def __init__(self, title: str, author: str):
         # Blog Title
-        self.title = title.capitalize()
+        self.title = ' '.join(x.capitalize() for x in title.split(' '))
 
         # Author Name (capitalized)
         self.author = ' '.join(x.capitalize() for x in author.split(' '))
@@ -10,7 +10,7 @@ class Blog:
         self.posts = []
 
     def __repr__(self):
-        pass
+        return '{0} by {1} ({2} posts)'.format(self.title, self.author, len(self.posts))
 
     def create_post(self, title: str, content: str):
         pass

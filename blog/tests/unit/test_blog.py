@@ -10,10 +10,11 @@ class BlogTestCase(unittest.TestCase):
         self.assertEqual(title, new_blog.title)
 
     def test_blog_title_capitalized(self):
-        title = 'test'
+        title = 'test title'
         author = 'First Last'
         new_blog = Blog(title, author)
-        self.assertEqual(title.capitalize(), new_blog.title)
+        expected_title = 'Test Title'
+        self.assertEqual(expected_title, new_blog.title)
 
     def test_blog_author(self):
         title = 'Test'
@@ -41,6 +42,13 @@ class BlogTestCase(unittest.TestCase):
         new_blog = Blog(title, author)
         expected_list = []
         self.assertListEqual(expected_list, new_blog.posts)
+
+    def test_repr(self):
+        title = 'Test'
+        author = 'first last'
+        new_blog = Blog(title, author)
+        expected = 'Test by First Last (0 posts)'
+        self.assertEqual(expected, new_blog.__repr__())
 
 
 if __name__ == '__main__':
