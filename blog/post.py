@@ -1,6 +1,6 @@
 class Post:
     def __init__(self, title: str, content: str):
-        self.title = title
+        self.title = title.capitalize()
         self.content = content
 
     def json(self):

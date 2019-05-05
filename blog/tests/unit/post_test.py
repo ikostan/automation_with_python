@@ -10,6 +10,12 @@ class PostTest(unittest.TestCase):
         new_post = Post(title, content)
         self.assertEqual(title, new_post.title)
 
+    def test_assert_title_capitalized(self):
+        title = 'test'
+        content = 'Test Content'
+        new_post = Post(title, content)
+        self.assertEqual(title.capitalize(), new_post.title)
+
     def test_assert_content(self):
         title = 'Test'
         content = 'Test Content'
@@ -22,6 +28,16 @@ class PostTest(unittest.TestCase):
         new_post = Post(title, content)
         expected = {
                     'title': title,
+                    'content': content,
+                    }
+        self.assertDictEqual(expected, new_post.json())
+
+    def test_assert_json_title_capitalized(self):
+        title = 'test'
+        content = 'Test Content'
+        new_post = Post(title, content)
+        expected = {
+                    'title': title.capitalize(),
                     'content': content,
                     }
         self.assertDictEqual(expected, new_post.json())
