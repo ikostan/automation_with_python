@@ -2,7 +2,7 @@ import unittest
 from blog.post import Post
 
 
-class PostTest(unittest.TestCase):
+class PostTestCase(unittest.TestCase):
 
     def test_assert_title(self):
         title = 'Test'
