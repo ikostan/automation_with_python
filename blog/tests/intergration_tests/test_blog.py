@@ -36,6 +36,5 @@ class MyTestCase(unittest.TestCase):
         self.assertDictEqual(expected, new_blog.json())
 
 
-
 if __name__ == '__main__':
     unittest.main()
