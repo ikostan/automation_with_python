@@ -1,3 +1,6 @@
+from blog.post import Post
+
+
 class Blog:
     def __init__(self, title: str, author: str):
         # Blog Title
@@ -16,7 +19,7 @@ class Blog:
                                                  's' if len(self.posts) > 1 else '')
 
     def create_post(self, title: str, content: str):
-        pass
+        self.posts.append(Post(title, content))
 
     def json(self):
         pass

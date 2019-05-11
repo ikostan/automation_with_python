@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/tests/intergration_tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/tests/intergration_tests/test_blog.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,20 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog/blog.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/tests/unit/test_blog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+            <state relative-caret-position="66">
+              <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#123#254#0" />
@@ -41,6 +33,18 @@
                 <element signature="e#1388#1558#0" />
                 <element signature="e#1366#1555#0" />
                 <element signature="e#1613#1850#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/tests/intergration_tests/test_blog.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +95,9 @@
         <option value="$PROJECT_DIR$/blog/tests/unit/blog_test.py" />
         <option value="$PROJECT_DIR$/blog/post.py" />
         <option value="$PROJECT_DIR$/blog/tests/unit/test_post.py" />
-        <option value="$PROJECT_DIR$/blog/tests/unit/test_blog.py" />
         <option value="$PROJECT_DIR$/blog/blog.py" />
+        <option value="$PROJECT_DIR$/blog/tests/intergration_tests/test_blog.py" />
+        <option value="$PROJECT_DIR$/blog/tests/unit/test_blog.py" />
       </list>
     </option>
   </component>
@@ -131,6 +136,13 @@
               <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="intergration_tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="unit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -142,7 +154,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/tests/unit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/tests/intergration_tests/test_blog.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -162,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in unit">
+  <component name="RunManager" selected="Python tests.Integration in test_blog.py">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -478,6 +490,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Integration in test_blog.py" type="tests" factoryName="Unittests">
+      <module name="automation_with_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\superadmin\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/blog/tests/intergration_tests/test_blog.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_blog.BlogTestCase.test_create_post_in_blog" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="automation_with_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blog/tests/unit" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_blog.BlogTestCase.test_create_post_in_blog&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for test_blog.BlogTestCase.test_repr" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -522,11 +563,14 @@
       <item itemvalue="Python.complex_decorators" />
       <item itemvalue="Python.args_kwargs" />
       <item itemvalue="Python.variables_methods" />
+      <item itemvalue="Python tests.Integration in test_blog.py" />
       <item itemvalue="Python tests.Unittests in unit" />
       <item itemvalue="Python tests.Unittests for test_blog.BlogTestCase.test_repr" />
+      <item itemvalue="Python tests.Unittests for test_blog.BlogTestCase.test_create_post_in_blog" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for test_blog.BlogTestCase.test_create_post_in_blog" />
         <item itemvalue="Python tests.Unittests in unit" />
         <item itemvalue="Python tests.Unittests for test_blog.BlogTestCase.test_repr" />
       </list>
@@ -565,35 +609,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_unit - 2019.05.05 at 11h 58m 59s.xml">
-      <configuration name="Unittests in unit" configurationId="tests" />
+    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_create_post_in_blog - 2019.05.11 at 16h 03m 41s.xml">
+      <configuration name="Unittests for test_blog.BlogTestCase.test_create_post_in_blog" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_unit - 2019.05.05 at 12h 02m 42s.xml">
-      <configuration name="Unittests in unit" configurationId="tests" />
+    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_create_post_in_blog - 2019.05.11 at 16h 04m 41s.xml">
+      <configuration name="Unittests for test_blog.BlogTestCase.test_create_post_in_blog" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_unit - 2019.05.05 at 12h 04m 08s.xml">
-      <configuration name="Unittests in unit" configurationId="tests" />
+    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_create_post_in_blog - 2019.05.11 at 16h 06m 05s.xml">
+      <configuration name="Unittests for test_blog.BlogTestCase.test_create_post_in_blog" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_unit - 2019.05.05 at 12h 06m 59s.xml">
-      <configuration name="Unittests in unit" configurationId="tests" />
+    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_create_post_in_blog - 2019.05.11 at 16h 06m 33s.xml">
+      <configuration name="Unittests for test_blog.BlogTestCase.test_create_post_in_blog" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_unit - 2019.05.05 at 12h 07m 48s.xml">
-      <configuration name="Unittests in unit" configurationId="tests" />
+    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_create_post_in_blog - 2019.05.11 at 16h 06m 57s.xml">
+      <configuration name="Unittests for test_blog.BlogTestCase.test_create_post_in_blog" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_unit - 2019.05.05 at 12h 08m 08s.xml">
-      <configuration name="Unittests in unit" configurationId="tests" />
+    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_create_post_in_blog - 2019.05.11 at 16h 07m 26s.xml">
+      <configuration name="Unittests for test_blog.BlogTestCase.test_create_post_in_blog" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_unit - 2019.05.05 at 12h 09m 10s.xml">
-      <configuration name="Unittests in unit" configurationId="tests" />
+    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_create_post_in_blog - 2019.05.11 at 16h 07m 32s.xml">
+      <configuration name="Unittests for test_blog.BlogTestCase.test_create_post_in_blog" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_unit - 2019.05.05 at 12h 10m 51s.xml">
-      <configuration name="Unittests in unit" configurationId="tests" />
+    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_create_post_in_blog - 2019.05.11 at 16h 07m 46s.xml">
+      <configuration name="Unittests for test_blog.BlogTestCase.test_create_post_in_blog" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_unit - 2019.05.05 at 12h 11m 42s.xml">
-      <configuration name="Unittests in unit" configurationId="tests" />
+    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_create_post_in_blog - 2019.05.11 at 16h 08m 27s.xml">
+      <configuration name="Unittests for test_blog.BlogTestCase.test_create_post_in_blog" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_unit - 2019.05.05 at 12h 12m 09s.xml">
-      <configuration name="Unittests in unit" configurationId="tests" />
+    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_create_post_in_blog - 2019.05.11 at 16h 10m 38s.xml">
+      <configuration name="Unittests for test_blog.BlogTestCase.test_create_post_in_blog" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -614,8 +658,8 @@
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3715221" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39856374" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43535188" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39770868" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32569557" />
@@ -845,13 +889,6 @@
     <entry file="file://$PROJECT_DIR$/blog/app.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/unittest/loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -874,10 +911,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/blog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/tests/unit/test_blog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+        <state relative-caret-position="66">
+          <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#123#254#0" />
@@ -893,10 +944,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/blog.py">
+    <entry file="file://$PROJECT_DIR$/blog/tests/intergration_tests/test_blog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        <state relative-caret-position="63">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
