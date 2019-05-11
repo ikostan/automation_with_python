@@ -10,7 +10,9 @@ class Blog:
         self.posts = []
 
     def __repr__(self):
-        return '{0} by {1} ({2} post{3})'.format(self.title, self.author, len(self.posts),
+        return '{0} by {1} ({2} post{3})'.format(self.title,
+                                                 self.author,
+                                                 len(self.posts),
                                                  's' if len(self.posts) > 1 else '')
 
     def create_post(self, title: str, content: str):
