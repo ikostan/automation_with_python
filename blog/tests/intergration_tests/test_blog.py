@@ -20,9 +20,21 @@ class MyTestCase(unittest.TestCase):
         new_blog.create_post('Test post', 'Test content')
         expected = {'title': title,
                     'author': 'First Last',
-                    'posts': [{'title': 'Test Post', 'content': 'Test content'}]}
+                    'posts': [{'title': 'Test Post',
+                               'content': 'Test content'}]}
         # Tests
         self.assertDictEqual(expected, new_blog.json())
+
+    def test_json_no_posts(self):
+        title = 'Test'
+        author = 'first last'
+        new_blog = Blog(title, author)
+        expected = {'title': title,
+                    'author': 'First Last',
+                    'posts': []}
+        # Tests
+        self.assertDictEqual(expected, new_blog.json())
+
 
 
 if __name__ == '__main__':

@@ -67,9 +67,6 @@ class BlogTestCase(unittest.TestCase):
         expected = 'Test by First Last (2 posts)'
         self.assertEqual(expected, new_blog.__repr__())
 
-    def test_json(self):
-        self.assertEqual(True, False)
-
 
 if __name__ == '__main__':
     unittest.main()
