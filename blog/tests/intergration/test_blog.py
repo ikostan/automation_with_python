@@ -2,7 +2,7 @@ import unittest
 from blog.blog import Blog
 
 
-class MyTestCase(unittest.TestCase):
+class BlogTestCase(unittest.TestCase):
     def test_create_post_in_blog(self):
         title = 'Test'
         author = 'first last'

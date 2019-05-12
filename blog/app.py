@@ -1,3 +1,5 @@
+from blog.blog import Blog
+
 
 class App:
     def __init__(self):
@@ -10,6 +12,10 @@ class App:
         # Process the choice
         # Eventually exit
         pass
+
+    def add_blog(self, blog_name: str, blog: Blog):
+        blog_name = ' '.join([item.capitalize() for item in blog_name.split(' ')])
+        self.blogs.update({blog_name: blog})
 
     def print_blogs(self):
         # Print the available blogs
