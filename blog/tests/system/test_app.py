@@ -62,17 +62,39 @@ class AppTestCase(unittest.TestCase):
             mocked_print_post.assert_called_with(blog.posts[0])
 
     def test_print_post(self):
-        post = Post("Post title", "Post content")
+        title = "Post title"
+        content = "Post content"
+        post = Post(title, content)
         expected = '''
-                    --- Post Title ---
+                    --- {0} ---
         
-                    Post content
+                    {1}
                 
-                    '''
+                    '''.format(' '.join([word.capitalize() for word in title.split(' ')]), content)
         with patch('builtins.print') as mocked_print:
             app = App()
             app.print_post(post)
             mocked_print.assert_called_with(expected)
+
+    def test_ask_create_post(self):
+        app = App()
+        blog_name = "Blog Name"
+        blog = Blog(blog_name, "First Last")
+        app.blogs[blog_name] = blog
+        expected = {
+            'title': "Post Title",
+            'content': "Post Content",
+        }
+        with patch('builtins.input') as mocked_input:
+            # blog_name, post_title, post_content
+            post_title = "Post Title"
+            post_content = "Post Content"
+            mocked_input.side_effect = (blog_name, post_title, post_content)
+            app.ask_create_post()
+            self.assertIsNotNone(app.blogs["Blog Name"].posts[0])
+            self.assertDictEqual(expected, app.blogs["Blog Name"].posts[0].json())
+            self.assertEqual(app.blogs["Blog Name"].posts[0].title, post_title)
+            self.assertEqual(app.blogs["Blog Name"].posts[0].content, post_content)
 
 
 if __name__ == '__main__':
