@@ -111,11 +111,17 @@ class AppTestCase(unittest.TestCase):
         with patch('builtins.input') as mocked_input:
             with patch('blog.app.App.ask_create_blog') as mocked_ask_create_blog:
                 user_selection = 'c'
-                blog_name = 'Blog Title'
-                author_name = 'Author Name'
-                mocked_input.side_effect = (user_selection, blog_name, author_name, 'q')
+                mocked_input.side_effect = (user_selection, 'q')
                 main.main()
                 mocked_ask_create_blog.assert_called()
+
+    def test_menu_calls_print_blogs(self):
+        with patch('builtins.input') as mocked_input:
+            with patch('blog.app.App.print_blogs') as mocked_print_blogs:
+                user_selection = 'l'
+                mocked_input.side_effect = (user_selection, 'q')
+                main.main()
+                mocked_print_blogs.assert_called()
 
 
 if __name__ == '__main__':
