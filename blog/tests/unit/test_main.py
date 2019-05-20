@@ -1,9 +1,12 @@
 import unittest
+import os
 from unittest.mock import patch
 import blog.main as main
 
 
 class MyTestCase(unittest.TestCase):
+
+    print("Running unit tests from: " + os.path.dirname(__file__) + '\\' + os.path.basename(__file__) + "\n")
 
     def test_app_menu(self):
         expected = "Enter 'c' to create a blog, " \

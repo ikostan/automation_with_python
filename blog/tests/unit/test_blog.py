@@ -1,8 +1,11 @@
 import unittest
+import os
 from blog.blog import Blog
 
 
 class BlogTestCase(unittest.TestCase):
+
+    print("Running unit tests from: " + os.path.dirname(__file__) + '\\' + os.path.basename(__file__) + "\n")
 
     def test_blog_title(self):
         title = 'Test'

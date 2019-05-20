@@ -1,8 +1,11 @@
 import unittest
+import os
 from blog.post import Post
 
 
 class PostTestCase(unittest.TestCase):
+
+    print("Running unit tests from: " + os.path.dirname(__file__) + '\\' + os.path.basename(__file__) + "\n")
 
     def test_assert_title(self):
         title = 'Test'

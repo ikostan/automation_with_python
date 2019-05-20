@@ -1,4 +1,5 @@
 import unittest
+import os
 from unittest.mock import patch
 from blog.app import App
 from blog.blog import Blog
@@ -7,6 +8,8 @@ from blog.post import Post
 
 
 class AppTestCase(unittest.TestCase):
+
+    print("Running unit tests from: " + os.path.dirname(__file__) + '\\' + os.path.basename(__file__) + "\n")
 
     def test_main_calls_print_blogs(self):
         with patch('blog.app.App.print_blogs') as mocked_print_blogs:
