@@ -1,4 +1,6 @@
 from blog.app import App
+
+app = App()
 MENU_PROMPT = "Enter 'c' to create a blog, " \
               "'l' to list blogs, " \
               "'r' to read one, " \
@@ -8,8 +10,6 @@ MENU_PROMPT = "Enter 'c' to create a blog, " \
 
 def main():
     #  show user available blogs
-    blogs = dict()
-    app = App()
     app.print_blogs()
 
     # Let the user make a choice

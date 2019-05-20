@@ -96,6 +96,27 @@ class AppTestCase(unittest.TestCase):
             self.assertEqual(app.blogs["Blog Name"].posts[0].title, post_title)
             self.assertEqual(app.blogs["Blog Name"].posts[0].content, post_content)
 
+    def test_menu_create_blog(self):
+        with patch('builtins.input') as mocked_input:
+            user_selection = 'c'
+            blog_name = 'Blog Title'
+            author_name = 'Author Name'
+            mocked_input.side_effect = (user_selection, blog_name, author_name, 'q')
+            main.main()
+            self.assertIsNotNone(main.app.blogs[blog_name])
+            self.assertEqual(main.app.blogs[blog_name].author, author_name)
+            self.assertEqual(main.app.blogs[blog_name].title, blog_name)
+
+    def test_menu_calls_create_blog(self):
+        with patch('builtins.input') as mocked_input:
+            with patch('blog.app.App.ask_create_blog') as mocked_ask_create_blog:
+                user_selection = 'c'
+                blog_name = 'Blog Title'
+                author_name = 'Author Name'
+                mocked_input.side_effect = (user_selection, blog_name, author_name, 'q')
+                main.main()
+                mocked_ask_create_blog.assert_called()
+
 
 if __name__ == '__main__':
     unittest.main()
