@@ -107,7 +107,7 @@ class AppTestCase(unittest.TestCase):
             self.assertEqual(main.app.blogs[blog_name].author, author_name)
             self.assertEqual(main.app.blogs[blog_name].title, blog_name)
 
-    def test_menu_calls_create_blog(self):
+    def test_menu_calls_ask_create_blog(self):
         with patch('builtins.input') as mocked_input:
             with patch('blog.app.App.ask_create_blog') as mocked_ask_create_blog:
                 user_selection = 'c'
