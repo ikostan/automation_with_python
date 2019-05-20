@@ -62,3 +62,4 @@ blog/tests/unit/__pycache__/__init__.cpython-37.pyc
 blog/tests/unit/__pycache__/test_blog.cpython-37.pyc
 blog/tests/unit/__pycache__/test_main.cpython-37.pyc
 blog/tests/unit/__pycache__/test_post.cpython-37.pyc
+.idea/workspace.xml
