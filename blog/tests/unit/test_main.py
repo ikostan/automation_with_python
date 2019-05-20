@@ -8,7 +8,7 @@ class MyTestCase(unittest.TestCase):
 
     print("Running unit tests from: " + os.path.dirname(__file__) + '\\' + os.path.basename(__file__) + "\n")
 
-    def test_app_menu(self):
+    def test_app_menu_prints_prompt(self):
         expected = "Enter 'c' to create a blog, " \
                    "'l' to list blogs, " \
                    "'r' to read one, " \
