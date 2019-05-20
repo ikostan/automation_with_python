@@ -23,8 +23,8 @@ class App:
     def print_blogs(self):
         # Print the available blogs
         # Key - blog name, value - Blog
-        for key, value in self.blogs.items():
-            print("- {0}".format(value))
+        for key, blog in self.blogs.items():
+            print("- {0}".format(blog))
 
     def ask_create_blog(self):
         title = input(self.PROMPT_FOR_BLOG_TITLE)

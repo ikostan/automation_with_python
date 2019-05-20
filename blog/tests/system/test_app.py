@@ -17,11 +17,21 @@ class AppTestCase(unittest.TestCase):
                 main.main()
                 mocked_print_blogs.assert_called()
 
-    def test_app_print_blogs(self):
+    def test_app_print_blogs_0_posts(self):
         app = App()
         blog = Blog("Blog", "First Last")
         app.add_blog('first blog', blog)
         expected = '- Blog by First Last (0 post)'
+        with patch('builtins.print') as mocked_print:
+            app.print_blogs()
+            mocked_print.assert_called_with(expected)
+
+    def test_app_print_blogs_1_post(self):
+        app = App()
+        blog = Blog("Blog", "First Last")
+        blog.create_post("Test post", "Test Content")
+        app.add_blog('first blog', blog)
+        expected = '- Blog by First Last (1 post)'
         with patch('builtins.print') as mocked_print:
             app.print_blogs()
             mocked_print.assert_called_with(expected)
