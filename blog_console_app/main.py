@@ -1,7 +1,7 @@
-from blog.app import App
+from blog_console_app.app import App
 
 app = App()
-MENU_PROMPT = "Enter 'c' to create a blog, " \
+MENU_PROMPT = "Enter 'c' to create a blog_console_app, " \
               "'l' to list blogs, " \
               "'r' to read one, " \
               "'p' to create a post, " \

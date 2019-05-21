@@ -1,7 +1,7 @@
 import unittest
 import os
 from unittest.mock import patch
-import blog.main as main
+import blog_console_app.main as main
 
 
 class MyTestCase(unittest.TestCase):
@@ -9,7 +9,7 @@ class MyTestCase(unittest.TestCase):
     print("Running unit tests from: " + os.path.dirname(__file__) + '\\' + os.path.basename(__file__) + "\n")
 
     def test_app_menu_prints_prompt(self):
-        expected = "Enter 'c' to create a blog, " \
+        expected = "Enter 'c' to create a blog_console_app, " \
                    "'l' to list blogs, " \
                    "'r' to read one, " \
                    "'p' to create a post, " \

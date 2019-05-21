@@ -1,10 +1,10 @@
-from blog.blog import Blog
+from blog_console_app.blog import Blog
 
 
 class App:
-    PROMPT_FOR_BLOG_TITLE = 'Enter your blog title: '
+    PROMPT_FOR_BLOG_TITLE = 'Enter your blog_console_app title: '
     PROMPT_FOR_AUTHOR_NAME = 'Enter your name: '
-    PROMPT_FOR_BLOG_TO_READ = 'Enter your blog title you would like to read: '
+    PROMPT_FOR_BLOG_TO_READ = 'Enter your blog_console_app title you would like to read: '
     POST_TEMPLATE = '''
                     --- {0} ---
         
@@ -13,7 +13,7 @@ class App:
                     '''
 
     def __init__(self):
-        # Mapping of blog_name: blog object
+        # Mapping of blog_name: blog_console_app object
         self.blogs = dict()
 
     def add_blog(self, blog_name: str, blog: Blog):
@@ -22,7 +22,7 @@ class App:
 
     def print_blogs(self):
         # Print the available blogs
-        # Key - blog name, value - Blog
+        # Key - blog_console_app name, value - Blog
         for key, blog in self.blogs.items():
             print("- {0}".format(blog))
 
@@ -43,7 +43,7 @@ class App:
         print(self.POST_TEMPLATE.format(post.title, post.content))
 
     def ask_create_post(self):
-        blog_name = input('Enter the blog title you want to write a post in: ')
+        blog_name = input('Enter the blog_console_app title you want to write a post in: ')
         title = input('Enter your post title: ')
         content = input('Enter your post content: ')
         self.blogs[blog_name].create_post(title, content)

@@ -1,6 +1,6 @@
 import unittest
 import os
-from blog.post import Post
+from blog_console_app.post import Post
 
 
 class PostTestCase(unittest.TestCase):

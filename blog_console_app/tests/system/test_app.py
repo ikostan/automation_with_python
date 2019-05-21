@@ -1,10 +1,10 @@
 import unittest
 import os
 from unittest.mock import patch
-from blog.app import App
-from blog.blog import Blog
-import blog.main as main
-from blog.post import Post
+from blog_console_app.app import App
+from blog_console_app.blog import Blog
+import blog_console_app.main as main
+from blog_console_app.post import Post
 
 
 class AppTestCase(unittest.TestCase):
@@ -19,7 +19,7 @@ class AppTestCase(unittest.TestCase):
         self.app.add_blog(self.blog_name, self.blog)
 
     def test_main_calls_print_blogs(self):
-        with patch('blog.app.App.print_blogs') as mocked_print_blogs:
+        with patch('blog_console_app.app.App.print_blogs') as mocked_print_blogs:
             with patch('builtins.input', return_value='q'):
                 main.main()
                 mocked_print_blogs.assert_called()
@@ -45,13 +45,13 @@ class AppTestCase(unittest.TestCase):
 
     def test_ask_read_blog(self):
         with patch('builtins.input', return_value=self.blog_name):
-            with patch('blog.app.App.print_posts') as mocked_print_posts:
+            with patch('blog_console_app.app.App.print_posts') as mocked_print_posts:
                 self.app.ask_read_blog()
                 mocked_print_posts.assert_called_with(self.blog)
 
     def test_print_posts(self):
         self.blog.create_post("Test post", "Test Content")
-        with patch('blog.app.App.print_post') as mocked_print_post:
+        with patch('blog_console_app.app.App.print_post') as mocked_print_post:
             self.app.print_posts(self.blog)
             mocked_print_post.assert_called_with(self.blog.posts[0])
 
@@ -98,7 +98,7 @@ class AppTestCase(unittest.TestCase):
 
     def test_menu_calls_ask_create_blog(self):
         with patch('builtins.input') as mocked_input:
-            with patch('blog.app.App.ask_create_blog') as mocked_ask_create_blog:
+            with patch('blog_console_app.app.App.ask_create_blog') as mocked_ask_create_blog:
                 user_selection = 'c'
                 mocked_input.side_effect = (user_selection, 'q')
                 main.main()
@@ -106,7 +106,7 @@ class AppTestCase(unittest.TestCase):
 
     def test_menu_calls_print_blogs(self):
         with patch('builtins.input') as mocked_input:
-            with patch('blog.app.App.print_blogs') as mocked_print_blogs:
+            with patch('blog_console_app.app.App.print_blogs') as mocked_print_blogs:
                 user_selection = 'l'
                 mocked_input.side_effect = (user_selection, 'q')
                 main.main()
@@ -114,7 +114,7 @@ class AppTestCase(unittest.TestCase):
 
     def test_menu_calls_ask_read_blog(self):
         with patch('builtins.input') as mocked_input:
-            with patch('blog.app.App.ask_read_blog') as mocked_ask_read_blog:
+            with patch('blog_console_app.app.App.ask_read_blog') as mocked_ask_read_blog:
                 user_selection = 'r'
                 mocked_input.side_effect = (user_selection, 'q')
                 main.main()
@@ -122,7 +122,7 @@ class AppTestCase(unittest.TestCase):
 
     def test_menu_calls_ask_create_post(self):
         with patch('builtins.input') as mocked_input:
-            with patch('blog.app.App.ask_create_post') as mocked_ask_create_post:
+            with patch('blog_console_app.app.App.ask_create_post') as mocked_ask_create_post:
                 user_selection = 'p'
                 mocked_input.side_effect = (user_selection, 'q')
                 main.main()
