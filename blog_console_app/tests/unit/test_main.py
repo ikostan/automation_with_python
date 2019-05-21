@@ -8,8 +8,6 @@ class MyTestCase(unittest.TestCase):
 
     print("Running unit tests from: " + os.path.dirname(__file__) + '\\' + os.path.basename(__file__) + "\n")
 
-    #  TODO: create a setUp method
-
     def test_app_menu_prints_prompt(self):
         expected = "Enter 'c' to create a blog_console_app, " \
                    "'l' to list blogs, " \

@@ -172,7 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.blog_app_test_suite">
+  <component name="RunManager" selected="Python tests.Unittests for Blog app in test_post.py">
     <configuration name="Flask app" type="PythonConfigurationType" factoryName="Python">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
