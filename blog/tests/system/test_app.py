@@ -11,6 +11,13 @@ class AppTestCase(unittest.TestCase):
 
     print("Running unit tests from: " + os.path.dirname(__file__) + '\\' + os.path.basename(__file__) + "\n")
 
+    def setUp(self) -> None:
+        self.bloger_name = 'First Last'
+        self.app = App()
+        self.blog_name = "Blog Name"
+        self.blog = Blog(self.blog_name, self.bloger_name)
+        self.app.add_blog(self.blog_name, self.blog)
+
     def test_main_calls_print_blogs(self):
         with patch('blog.app.App.print_blogs') as mocked_print_blogs:
             with patch('builtins.input', return_value='q'):
@@ -18,48 +25,35 @@ class AppTestCase(unittest.TestCase):
                 mocked_print_blogs.assert_called()
 
     def test_app_print_blogs_0_posts(self):
-        app = App()
-        blog = Blog("Blog", "First Last")
-        app.add_blog('first blog', blog)
-        expected = '- Blog by First Last (0 post)'
+        expected = '- {0} by {1} (0 post)'.format(self.blog_name, self.bloger_name)
         with patch('builtins.print') as mocked_print:
-            app.print_blogs()
+            self.app.print_blogs()
             mocked_print.assert_called_with(expected)
 
     def test_app_print_blogs_1_post(self):
-        app = App()
-        blog = Blog("Blog", "First Last")
-        blog.create_post("Test post", "Test Content")
-        app.add_blog('first blog', blog)
-        expected = '- Blog by First Last (1 post)'
+        self.blog.create_post("Test post", "Test Content")
+        expected = '- {0} by {1} (1 post)'.format(self.blog_name, self.bloger_name)
         with patch('builtins.print') as mocked_print:
-            app.print_blogs()
+            self.app.print_blogs()
             mocked_print.assert_called_with(expected)
 
     def test_ask_create_blog(self):
         with patch('builtins.input') as mocked_input:
-            app = App()
             mocked_input.side_effect = ('Test', 'Test Author')
-            app.ask_create_blog()
-            self.assertIsNotNone(app.blogs.get('Test'))
+            self.app.ask_create_blog()
+            self.assertIsNotNone(self.app.blogs.get('Test'))
 
     def test_ask_read_blog(self):
-        app = App()
-        blog = Blog("Test", "First Last")
-        app.add_blog("Test", blog)
-        with patch('builtins.input', return_value="Test"):
+        with patch('builtins.input', return_value=self.blog_name):
             with patch('blog.app.App.print_posts') as mocked_print_posts:
-                app.ask_read_blog()
-                mocked_print_posts.assert_called_with(blog)
+                self.app.ask_read_blog()
+                mocked_print_posts.assert_called_with(self.blog)
 
     def test_print_posts(self):
-        app = App()
-        blog = Blog("Test", "First Last")
-        blog.create_post("Test post", "Test Content")
-        app.add_blog("Test", blog)
+        self.blog.create_post("Test post", "Test Content")
         with patch('blog.app.App.print_post') as mocked_print_post:
-            app.print_posts(blog)
-            mocked_print_post.assert_called_with(blog.posts[0])
+            self.app.print_posts(self.blog)
+            mocked_print_post.assert_called_with(self.blog.posts[0])
 
     def test_print_post(self):
         title = "Post title"
@@ -72,15 +66,10 @@ class AppTestCase(unittest.TestCase):
                 
                     '''.format(' '.join([word.capitalize() for word in title.split(' ')]), content)
         with patch('builtins.print') as mocked_print:
-            app = App()
-            app.print_post(post)
+            self.app.print_post(post)
             mocked_print.assert_called_with(expected)
 
     def test_ask_create_post(self):
-        app = App()
-        blog_name = "Blog Name"
-        blog = Blog(blog_name, "First Last")
-        app.blogs[blog_name] = blog
         expected = {
             'title': "Post Title",
             'content': "Post Content",
@@ -89,12 +78,12 @@ class AppTestCase(unittest.TestCase):
             # blog_name, post_title, post_content
             post_title = "Post Title"
             post_content = "Post Content"
-            mocked_input.side_effect = (blog_name, post_title, post_content)
-            app.ask_create_post()
-            self.assertIsNotNone(app.blogs["Blog Name"].posts[0])
-            self.assertDictEqual(expected, app.blogs["Blog Name"].posts[0].json())
-            self.assertEqual(app.blogs["Blog Name"].posts[0].title, post_title)
-            self.assertEqual(app.blogs["Blog Name"].posts[0].content, post_content)
+            mocked_input.side_effect = (self.blog_name, post_title, post_content)
+            self.app.ask_create_post()
+            self.assertIsNotNone(self.app.blogs["Blog Name"].posts[0])
+            self.assertDictEqual(expected, self.app.blogs["Blog Name"].posts[0].json())
+            self.assertEqual(self.app.blogs["Blog Name"].posts[0].title, post_title)
+            self.assertEqual(self.app.blogs["Blog Name"].posts[0].content, post_content)
 
     def test_menu_create_blog(self):
         with patch('builtins.input') as mocked_input:
