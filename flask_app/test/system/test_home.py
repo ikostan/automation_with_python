@@ -1,5 +1,6 @@
 import unittest
 import os
+import json
 from flask_app.app import app
 
 
@@ -14,6 +15,8 @@ class HomeTestCase(unittest.TestCase):
             resp = client.get('/')
             # test response status code, should be 200
             self.assertEqual(resp.status_code, 200)
+            # verify json data
+            self.assertEqual(json.loads(resp.get_data()), {'message': 'Hello, world!'})
 
 
 if __name__ == '__main__':
