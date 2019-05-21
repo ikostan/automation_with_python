@@ -7,11 +7,13 @@ class BlogTestCase(unittest.TestCase):
 
     print("Running unit tests from: " + os.path.dirname(__file__) + '\\' + os.path.basename(__file__) + "\n")
 
+    def setUp(self):
+        self.title = 'Test'
+        self.author = 'First Last'
+        self.new_blog = Blog(self.title, self.author)
+
     def test_blog_title(self):
-        title = 'Test'
-        author = 'First Last'
-        new_blog = Blog(title, author)
-        self.assertEqual(title, new_blog.title)
+        self.assertEqual(self.title, self.new_blog.title)
 
     def test_blog_title_capitalized(self):
         title = 'test title'
@@ -21,10 +23,7 @@ class BlogTestCase(unittest.TestCase):
         self.assertEqual(expected_title, new_blog.title)
 
     def test_blog_author(self):
-        title = 'Test'
-        author = 'First Last'
-        new_blog = Blog(title, author)
-        self.assertEqual(author, new_blog.author)
+        self.assertEqual(self.author, self.new_blog.author)
 
     def test_blog_author_capitalized(self):
         title = 'Test'
@@ -34,41 +33,26 @@ class BlogTestCase(unittest.TestCase):
         self.assertEqual(expected, new_blog.author)
 
     def test_initial_posts_length(self):
-        title = 'Test'
-        author = 'first last'
-        new_blog = Blog(title, author)
         expected_length = 0
-        self.assertEqual(expected_length, len(new_blog.posts))
+        self.assertEqual(expected_length, len(self.new_blog.posts))
 
     def test_initial_posts_list(self):
-        title = 'Test'
-        author = 'first last'
-        new_blog = Blog(title, author)
         expected_list = []
-        self.assertListEqual(expected_list, new_blog.posts)
+        self.assertListEqual(expected_list, self.new_blog.posts)
 
     def test_multiple_posts_list(self):
-        title = 'Test'
-        author = 'first last'
-        new_blog = Blog(title, author)
-        new_blog.posts = ['post #1', 'post #2']
+        self.new_blog.posts = ['post #1', 'post #2']
         expected_list = ['post #1', 'post #2']
-        self.assertListEqual(expected_list, new_blog.posts)
+        self.assertListEqual(expected_list, self.new_blog.posts)
 
     def test_repr(self):
-        title = 'Test'
-        author = 'first last'
-        new_blog = Blog(title, author)
         expected = 'Test by First Last (0 post)'
-        self.assertEqual(expected, new_blog.__repr__())
+        self.assertEqual(expected, self.new_blog.__repr__())
 
     def test_repr_multiple_posts(self):
-        title = 'Test'
-        author = 'first last'
-        new_blog = Blog(title, author)
-        new_blog.posts = ['post #1', 'post #2']
+        self.new_blog.posts = ['post #1', 'post #2']
         expected = 'Test by First Last (2 posts)'
-        self.assertEqual(expected, new_blog.__repr__())
+        self.assertEqual(expected, self.new_blog.__repr__())
 
 
 if __name__ == '__main__':
