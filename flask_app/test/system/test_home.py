@@ -15,7 +15,7 @@ class HomeTestCase(unittest.TestCase):
             resp = client.get('/')
             # test response status code, should be 200
             self.assertEqual(resp.status_code, 200)
-            # verify json data
+            # verify json data by loading string and converting it into json/dictionary
             self.assertEqual(json.loads(resp.get_data()), {'message': 'Hello, world!'})
 
 
