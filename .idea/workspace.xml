@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flask_app/test/system/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_app/test/system/test_home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/test/system/test_home.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/test/system/test_home.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/flask_app/test/system/test_home.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -184,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python tests.Unittests in test_home.py">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -617,6 +614,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_home.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="automation_with_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_app/test/system" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/flask_app/test/system/test_home.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.blog_app_test_suite" />
       <item itemvalue="Python.exercise_1" />
@@ -639,9 +650,11 @@
       <item itemvalue="Python tests.Unittests for Blog app in test_blog.py" />
       <item itemvalue="Python tests.Unittests for Blog app in test_post.py" />
       <item itemvalue="Python.app" />
+      <item itemvalue="Python tests.Unittests in test_home.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_home.py" />
         <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
@@ -679,12 +692,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_blog_author - 2019.05.20 at 17h 51m 43s.xml">
-      <configuration name="Unittests for test_blog.BlogTestCase.test_blog_author" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_blog_author_capitalized - 2019.05.20 at 17h 51m 52s.xml">
-      <configuration name="Unittests for test_blog.BlogTestCase.test_blog_author_capitalized" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_test_blog_BlogTestCase_test_initial_posts_length - 2019.05.20 at 17h 52m 17s.xml">
       <configuration name="Unittests for test_blog.BlogTestCase.test_initial_posts_length" configurationId="tests" />
     </history-entry>
@@ -709,6 +716,12 @@
     <history-entry file="Unittests_for_Blog_app_in_test_post_py - 2019.05.20 at 17h 59m 10s.xml">
       <configuration name="Unittests for Blog app in test_post.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_home_py - 2019.05.20 at 19h 49m 20s.xml">
+      <configuration name="Unittests in test_home.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_home_py - 2019.05.20 at 19h 50m 05s.xml">
+      <configuration name="Unittests in test_home.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -723,12 +736,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.25669643" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.25669643" />
       <window_info id="Structure" order="1" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3633388" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3633388" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45499182" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1018,16 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog_console_app/tests/system/test_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1861">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog_console_app/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
@@ -1082,6 +1085,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog_console_app/tests/system/test_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flask_app/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1092,7 +1105,7 @@
     <entry file="file://$PROJECT_DIR$/flask_app/test/system/test_home.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
