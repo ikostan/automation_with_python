@@ -8,7 +8,7 @@ class HomeTestCase(unittest.TestCase):
     print("Running unit tests from: " + os.path.dirname(__file__) + '\\' + os.path.basename(__file__) + "\n")
 
     def test_home(self):
-        # make a request for the app
+        # make a request for the app with a test client
         with app.test_client() as client:
             #  response variable
             resp = client.get('/')
