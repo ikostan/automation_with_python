@@ -7,6 +7,8 @@ class PostTestCase(unittest.TestCase):
 
     print("Running unit tests from: " + os.path.dirname(__file__) + '\\' + os.path.basename(__file__) + "\n")
 
+    #  TODO: create a setUp method
+
     def test_assert_title(self):
         title = 'Test'
         content = 'Test Content'
