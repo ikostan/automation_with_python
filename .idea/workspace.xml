@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/test/system/test_home.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/test/system/test_home.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,17 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flask_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flask_app/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+              <caret column="32" selection-start-column="32" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -37,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flask_app/test/system/test_home.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
+            <state relative-caret-position="210">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -121,7 +113,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,17 +131,11 @@
               <item name="flask_app" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="flask_app" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -642,12 +627,12 @@
       <item itemvalue="Python.complex_decorators" />
       <item itemvalue="Python.args_kwargs" />
       <item itemvalue="Python.variables_methods" />
+      <item itemvalue="Python.app" />
       <item itemvalue="Python tests.Integration for Blog app  in test_blog.py" />
       <item itemvalue="Python tests.System for Blog app  in test_app.py" />
       <item itemvalue="Python tests.Unittests for Blog app in test_main.py" />
       <item itemvalue="Python tests.Unittests for Blog app in test_blog.py" />
       <item itemvalue="Python tests.Unittests for Blog app in test_post.py" />
-      <item itemvalue="Python.app" />
       <item itemvalue="Python tests.Unittests in test_home.py" />
     </list>
     <recent_temporary>
@@ -690,18 +675,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_multiple_posts_list - 2019.05.20 at 17h 52m 59s.xml">
-      <configuration name="Unittests for test_blog.BlogTestCase.test_multiple_posts_list" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_repr - 2019.05.20 at 17h 53m 21s.xml">
-      <configuration name="Unittests for test_blog.BlogTestCase.test_repr" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_blog_BlogTestCase_test_repr_multiple_posts - 2019.05.20 at 17h 53m 47s.xml">
-      <configuration name="Unittests for test_blog.BlogTestCase.test_repr_multiple_posts" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Blog_app_in_test_post_py - 2019.05.20 at 17h 58m 02s.xml">
-      <configuration name="Unittests for Blog app in test_post.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_Blog_app_in_test_post_py - 2019.05.20 at 17h 58m 16s.xml">
       <configuration name="Unittests for Blog app in test_post.py" configurationId="tests" />
     </history-entry>
@@ -720,6 +693,18 @@
     <history-entry file="Unittests_in_test_home_py - 2019.05.20 at 19h 53m 53s.xml">
       <configuration name="Unittests in test_home.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_home_py - 2019.05.20 at 19h 55m 48s.xml">
+      <configuration name="Unittests in test_home.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_home_py - 2019.05.24 at 17h 24m 40s.xml">
+      <configuration name="Unittests in test_home.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_home_py - 2019.05.24 at 17h 29m 32s.xml">
+      <configuration name="Unittests in test_home.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_home_py - 2019.05.24 at 17h 33m 09s.xml">
+      <configuration name="Unittests in test_home.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -734,12 +719,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.25669643" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.19345239" />
       <window_info id="Structure" order="1" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3633388" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3420622" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45499182" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1092,8 +1077,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flask_app/test/system/test_home.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
+        <state relative-caret-position="210">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -1102,8 +1087,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flask_app/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
         </state>
       </provider>
     </entry>
