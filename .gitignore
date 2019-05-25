@@ -112,3 +112,12 @@ blog_console_app/__init__.py
 .idea/workspace.xml
 .idea/workspace.xml
 .idea/workspace.xml
+starter_code/__pycache__/__init__.cpython-37.pyc
+starter_code/__pycache__/app.cpython-37.pyc
+.idea/workspace.xml
+starter_code/resources/__pycache__/item.cpython-37.pyc
+starter_code/resources/__pycache__/__init__.cpython-37.pyc
+starter_code/models/__pycache__/item.cpython-37.pyc
+starter_code/models/__pycache__/__init__.cpython-37.pyc
+starter_code/__pycache__/db.cpython-37.pyc
+.idea/workspace.xml
