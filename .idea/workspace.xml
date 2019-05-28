@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/starter_code/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/models/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/models/item.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/starter_code/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="59">
@@ -23,6 +23,27 @@
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/starter_code/resources/item.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/starter_code/models/item.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -91,10 +112,12 @@
         <option value="$PROJECT_DIR$/flask_app/test/system/base_test.py" />
         <option value="$PROJECT_DIR$/starter_code/run.py" />
         <option value="$PROJECT_DIR$/starter_code/app.py" />
+        <option value="$PROJECT_DIR$/starter_code/resources/item.py" />
+        <option value="$PROJECT_DIR$/starter_code/models/item.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -117,6 +140,18 @@
               <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
               <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
               <item name="starter_code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -276,12 +311,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.19345239" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.19345239" />
       <window_info id="Structure" order="1" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2569558" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2569558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45499182" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -698,6 +733,23 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter_code/resources/item.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter_code/models/item.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
