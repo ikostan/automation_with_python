@@ -37,6 +37,3 @@ class ItemModelTestCase(unittest.TestCase):
 
         self.assertDictEqual(expected, self.itemModel.json())
 
-
-if __name__ == '__main__':
-    unittest.main()
