@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/starter_code/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,30 +15,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/starter_code/db.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="5" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/starter_code/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-21" />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/starter_code/run.py">
+        <entry file="file://$PROJECT_DIR$/starter_code/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
+            <state relative-caret-position="59">
+              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -293,12 +276,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.19345239" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.19345239" />
       <window_info id="Structure" order="1" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3420622" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2569558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45499182" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -683,24 +666,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/starter_code/db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="5" selection-end-column="21" />
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -709,6 +678,26 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-21" />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter_code/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter_code/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
