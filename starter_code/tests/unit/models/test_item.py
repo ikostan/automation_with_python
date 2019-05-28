@@ -30,7 +30,12 @@ class ItemModelTestCase(unittest.TestCase):
 
     #  testing JSON method
     def test_json(self):
-        pass
+        expected = {
+            'name': self.name,
+            'price': self.price
+        }
+
+        self.assertDictEqual(expected, self.itemModel.json())
 
 
 if __name__ == '__main__':
