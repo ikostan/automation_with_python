@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/starter_code/tests/integration/models/test_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/tests/integration/models/test_item.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter_code_section_6/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/models/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/models/item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/resources/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/resources/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/resources/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/resources/item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/tests/base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/tests/base_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/tests/integration/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/tests/integration/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/tests/integration/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/tests/integration/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/tests/integration/models/test_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/tests/integration/models/test_item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/tests/unit/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/tests/unit/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/tests/unit/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/tests/unit/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/tests/unit/models/test_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_5/tests/unit/models/test_item.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -106,43 +125,7 @@
             <path>
               <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
               <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="integration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="integration" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code_section_6" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,25 +181,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_item.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="automation_with_python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/starter_code/tests/integration/models" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/starter_code/tests/integration/models/test_item.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python tests.Unittests in test_item.py" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="false" />
@@ -251,9 +215,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_item_py - 2019.05.27 at 20h 05m 53s.xml">
-      <configuration name="Unittests in test_item.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_item_py - 2019.05.27 at 20h 14m 34s.xml">
       <configuration name="Unittests in test_item.py" configurationId="tests" />
     </history-entry>
@@ -279,6 +240,9 @@
       <configuration name="Unittests in test_item.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test_item_py - 2019.05.27 at 20h 52m 34s.xml">
+      <configuration name="Unittests in test_item.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_item_py - 2019.05.27 at 21h 11m 33s.xml">
       <configuration name="Unittests in test_item.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -616,7 +580,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/starter_code_section_5/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
@@ -640,7 +604,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/readme.md">
+    <entry file="file://$PROJECT_DIR$/starter_code_section_5/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-21" />
@@ -648,14 +612,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/db.py">
+    <entry file="file://$PROJECT_DIR$/starter_code_section_5/db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/run.py">
+    <entry file="file://$PROJECT_DIR$/starter_code_section_5/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
@@ -685,7 +649,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/app.py">
+    <entry file="file://$PROJECT_DIR$/starter_code_section_5/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
@@ -695,7 +659,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/resources/item.py">
+    <entry file="file://$PROJECT_DIR$/starter_code_section_5/resources/item.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
@@ -705,7 +669,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/tests/unit/models/test_item.py">
+    <entry file="file://$PROJECT_DIR$/starter_code_section_5/tests/unit/models/test_item.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="15" column="29" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="17" selection-end-column="57" />
@@ -715,14 +679,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/models/item.py">
+    <entry file="file://$PROJECT_DIR$/starter_code_section_5/models/item.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="12" column="10" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/tests/base_test.py">
+    <entry file="file://$PROJECT_DIR$/starter_code_section_5/tests/base_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
@@ -732,7 +696,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code/tests/integration/models/test_item.py">
+    <entry file="file://$PROJECT_DIR$/starter_code_section_5/tests/integration/models/test_item.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306">
           <folding>

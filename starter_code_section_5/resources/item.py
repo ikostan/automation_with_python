@@ -1,5 +1,5 @@
 from flask_restful import Resource, reqparse
-from starter_code.models.item import ItemModel
+from starter_code_section_5.models.item import ItemModel
 
 
 class Item(Resource):

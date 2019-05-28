@@ -1,6 +1,6 @@
 import os
-from starter_code.models.item import ItemModel
-from starter_code.tests.base_test import BaseTest
+from starter_code_section_5.models.item import ItemModel
+from starter_code_section_5.tests.base_test import BaseTest
 
 
 class ItemModelIntegrationTest(BaseTest):

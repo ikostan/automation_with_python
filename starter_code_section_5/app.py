@@ -3,7 +3,7 @@ import os
 from flask import Flask
 from flask_restful import Api
 
-from starter_code.resources.item import Item
+from starter_code_section_5.resources.item import Item
 
 app = Flask(__name__)
 
@@ -15,7 +15,7 @@ api = Api(app)
 api.add_resource(Item, '/item/<string:name>')
 
 if __name__ == '__main__':
-    from starter_code.db import db
+    from starter_code_section_5.db import db
 
     db.init_app(app)
 
