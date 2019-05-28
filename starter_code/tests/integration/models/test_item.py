@@ -1,4 +1,3 @@
-import unittest
 import os
 from starter_code.models.item import ItemModel
 from starter_code.tests.base_test import BaseTest
