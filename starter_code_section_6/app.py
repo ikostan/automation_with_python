@@ -3,8 +3,8 @@ import os
 from flask import Flask
 from flask_restful import Api
 
-from resources.item import Item, ItemList
-from resources.store import Store, StoreList
+from starter_code_section_6.resources.item import Item, ItemList
+from starter_code_section_6.resources.store import Store, StoreList
 
 app = Flask(__name__)
 
@@ -22,7 +22,7 @@ api.add_resource(StoreList, '/stores')
 
 
 if __name__ == '__main__':
-    from db import db
+    from starter_code_section_6.db import db
 
     db.init_app(app)
 
