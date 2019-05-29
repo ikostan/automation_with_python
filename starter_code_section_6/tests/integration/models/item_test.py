@@ -1,5 +1,5 @@
 from starter_code_section_6.models.item import ItemModel
-from starter_code_section_6.tests.base_test import BaseTest
+from starter_code_section_6.tests.integration.base_test import BaseTest
 from starter_code_section_6.models.store import StoreModel
 
 

@@ -22,5 +22,5 @@ class ItemTest(BaseUnitTestCase):
             item.json(),
             expected,
             "The JSON export of the item is incorrect. Received {}, expected {}."
-                .format(item.json(),
-                expected))
+                .format(item.json(), expected))
+

@@ -15,25 +15,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/starter_code_section_6/tests/unit/models/item_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="264">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/starter_code_section_6/tests/unit/unit_base_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#31#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,8 +92,8 @@
         <option value="$PROJECT_DIR$/starter_code_section_6/resources/store.py" />
         <option value="$PROJECT_DIR$/starter_code_section_6/tests/base_test.py" />
         <option value="$PROJECT_DIR$/starter_code_section_6/tests/integration/models/item_test.py" />
-        <option value="$PROJECT_DIR$/starter_code_section_6/tests/unit/models/item_test.py" />
         <option value="$PROJECT_DIR$/starter_code_section_6/tests/unit/unit_base_test.py" />
+        <option value="$PROJECT_DIR$/starter_code_section_6/tests/unit/models/item_test.py" />
       </list>
     </option>
   </component>
@@ -193,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests in item_test.py (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,6 +203,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in item_test.py (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="automation_with_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/starter_code_section_6/tests/integration/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/starter_code_section_6/tests/integration/models/item_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in item_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -231,6 +233,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in item_test.py (1)" />
         <item itemvalue="Python tests.Unittests in item_test.py" />
       </list>
     </recent_temporary>
@@ -268,9 +271,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_item_test_py - 2019.05.29 at 16h 20m 22s.xml">
-      <configuration name="Unittests in item_test.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_item_test_py - 2019.05.29 at 16h 27m 57s.xml">
       <configuration name="Unittests in item_test.py" configurationId="tests" />
     </history-entry>
@@ -298,6 +298,9 @@
     <history-entry file="Unittests_in_item_test_py - 2019.05.29 at 16h 43m 54s.xml">
       <configuration name="Unittests in item_test.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_item_test_py - 2019.05.29 at 16h 48m 04s.xml">
+      <configuration name="Unittests in item_test.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -312,12 +315,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.1727672" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.1727672" />
       <window_info id="Structure" order="1" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.28593996" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.28593996" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45499182" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -755,22 +758,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code_section_6/tests/unit/models/item_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/starter_code_section_6/tests/unit/unit_base_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter_code_section_6/tests/unit/models/item_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <element signature="e#31#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
