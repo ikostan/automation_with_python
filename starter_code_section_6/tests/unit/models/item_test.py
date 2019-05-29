@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from models.item import ItemModel
+from starter_code_section_6.models.item import ItemModel
 
 
 class ItemTest(TestCase):
