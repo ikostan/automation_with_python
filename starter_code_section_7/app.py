@@ -3,8 +3,8 @@ import os
 from flask import Flask
 from flask_restful import Api
 
-from starter_code_section_6.resources.item import Item, ItemList
-from starter_code_section_6.resources.store import Store, StoreList
+from starter_code_section_7.resources.item import Item, ItemList
+from starter_code_section_7.resources.store import Store, StoreList
 
 app = Flask(__name__)
 

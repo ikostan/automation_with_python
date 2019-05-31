@@ -1,6 +1,6 @@
-from starter_code_section_6.models.store import StoreModel
-from starter_code_section_6.models.item import ItemModel
-from starter_code_section_6.tests.integration.integration_base_test import BaseTest
+from starter_code_section_7.models.store import StoreModel
+from starter_code_section_7.models.item import ItemModel
+from starter_code_section_7.tests.integration.integration_base_test import BaseTest
 
 
 class StoreIntegrationTestCase(BaseTest):
