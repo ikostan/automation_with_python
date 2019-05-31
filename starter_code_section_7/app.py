@@ -5,6 +5,7 @@ from flask_restful import Api
 
 from starter_code_section_7.resources.item import Item, ItemList
 from starter_code_section_7.resources.store import Store, StoreList
+from starter_code_section_7.resources.user import UserRegistration
 
 app = Flask(__name__)
 
@@ -19,6 +20,7 @@ api.add_resource(Store, '/store/<string:name>')
 api.add_resource(Item, '/item/<string:name>')
 api.add_resource(ItemList, '/items')
 api.add_resource(StoreList, '/stores')
+api.add_resource(UserRegistration, '/register')
 
 
 if __name__ == '__main__':
