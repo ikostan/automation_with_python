@@ -1,10 +1,13 @@
-import unittest
+from starter_code_section_7.models.user import UserModel
+from starter_code_section_7.tests.unit.unit_base_test import BaseUnitTestCase
 
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)
+class UserTestCase(BaseUnitTestCase):
+    def test_init(self):
+        user_name = 'uname'
+        password = 'password'
+        user = UserModel(user_name, password)
 
+        self.assertEqual(user_name, user.username)
+        self.assertEqual(password, user.password)
 
-if __name__ == '__main__':
-    unittest.main()
