@@ -1,1 +1,3 @@
 from starter_code_section_7.tests.base_test import BaseTest
+from starter_code_section_7.models.user import UserModel
+from starter_code_section_7.resources.user import UserRegistration
