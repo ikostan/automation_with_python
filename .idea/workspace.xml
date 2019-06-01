@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/starter_code_section_7/tests/system/models/test_system_item.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter_code_section_7/tests/system/models/test_system_store.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter_code_section_7/tests/test_suite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_integration_item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_integration_store.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_integration_user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/system/system_test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_7/tests/system/system_test_suite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/system/test_item.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/system/test_store.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/system/test_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_7/tests/system/models/test_system_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_7/tests/test_suite.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +18,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/test_suite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="273">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,8 +92,8 @@
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/integration/integration_test_suite.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/system/test_store.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/system/test_item.py" />
-        <option value="$PROJECT_DIR$/starter_code_section_7/tests/test_suite.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/system/system_test_suite.py" />
+        <option value="$PROJECT_DIR$/starter_code_section_7/tests/test_suite.py" />
       </list>
     </option>
   </component>
@@ -371,13 +364,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.20497803" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.20497803" />
       <window_info id="Structure" order="1" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.46129543" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.43917853" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45499182" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -878,8 +872,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/test_suite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="273">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
