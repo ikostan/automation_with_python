@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/unit/models/test_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_7/tests/unit/models/test_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_user.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/unit/models/test_user.py">
+        <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+            <state relative-caret-position="99">
+              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -32,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -43,7 +43,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blog/tests/test_suite.py" />
         <option value="$PROJECT_DIR$/blog/tests/intergration/test_blog.py" />
         <option value="$PROJECT_DIR$/blog/tests/unit/test_main.py" />
         <option value="$PROJECT_DIR$/blog/app.py" />
@@ -94,6 +93,7 @@
         <option value="$PROJECT_DIR$/starter_code_section_6/tests/unit/models/test_item.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/unit/models/test_item.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/unit/models/test_user.py" />
+        <option value="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_user.py" />
       </list>
     </option>
   </component>
@@ -131,14 +131,14 @@
               <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
               <item name="starter_code_section_7" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
               <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
               <item name="starter_code_section_7" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -177,7 +177,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_user.py">
+  <component name="RunManager" selected="Python tests.Unittests in test_user.py (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,20 +197,6 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test_item.py (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="automation_with_python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/starter_code_section_7/tests/integration/models" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_item.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in test_item.py (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -255,6 +241,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_user.py (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="automation_with_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/starter_code_section_7/tests/integration/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_user.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in test_user.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -270,19 +270,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test_item.py (2)" />
       <item itemvalue="Python tests.Unittests in test_store.py" />
       <item itemvalue="Python tests.Unittests in test_item.py (3)" />
       <item itemvalue="Python tests.Unittests in test_store.py (1)" />
       <item itemvalue="Python tests.Unittests in test_user.py" />
+      <item itemvalue="Python tests.Unittests in test_user.py (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_user.py (1)" />
         <item itemvalue="Python tests.Unittests in test_user.py" />
         <item itemvalue="Python tests.Unittests in test_store.py (1)" />
         <item itemvalue="Python tests.Unittests in test_item.py (3)" />
         <item itemvalue="Python tests.Unittests in test_store.py" />
-        <item itemvalue="Python tests.Unittests in test_item.py (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -319,18 +319,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_store_py_(1) - 2019.05.29 at 17h 28m 24s.xml">
-      <configuration name="Unittests in test_store.py (1)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_store_py_(1) - 2019.05.29 at 17h 37m 08s.xml">
-      <configuration name="Unittests in test_store.py (1)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_item_py - 2019.05.31 at 17h 01m 38s.xml">
-      <configuration name="Unittests in test_item.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_item_py_(1) - 2019.05.31 at 17h 01m 51s.xml">
-      <configuration name="Unittests in test_item.py (1)" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_item_py_(1) - 2019.05.31 at 17h 03m 11s.xml">
       <configuration name="Unittests in test_item.py (1)" configurationId="tests" />
     </history-entry>
@@ -349,6 +337,18 @@
     <history-entry file="Unittests_in_test_store_py_(1) - 2019.05.31 at 17h 04m 29s.xml">
       <configuration name="Unittests in test_store.py (1)" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_user_py - 2019.05.31 at 17h 09m 15s.xml">
+      <configuration name="Unittests in test_user.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_user_py_(1) - 2019.05.31 at 17h 14m 03s.xml">
+      <configuration name="Unittests in test_user.py (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_user_py_(1) - 2019.05.31 at 17h 14m 32s.xml">
+      <configuration name="Unittests in test_user.py (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_user_py_(1) - 2019.05.31 at 17h 15m 01s.xml">
+      <configuration name="Unittests in test_user.py (1)" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -363,12 +363,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.20497803" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.20497803" />
       <window_info id="Structure" order="1" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.3364929" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.3364929" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45499182" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -447,16 +447,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="lists, tuples, sets, methods" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog_console_app/tests/unit/test_post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog_console_app/tests/test_suite.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -755,13 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/integration/integration_base_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_store.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -860,7 +843,24 @@
     <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/unit/models/test_user.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <caret line="11" column="48" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/integration/integration_base_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>
