@@ -3,7 +3,7 @@ from starter_code_section_7.models.item import ItemModel
 from starter_code_section_7.tests.base_test import BaseTest
 
 
-class StoreIntegrationTestCase(BaseTest):
+class StoreIntegrationTest(BaseTest):
     def test_create_store_items_empty(self):
         store = StoreModel('test')
         self.assertListEqual([], store.items.all(), "The store's items list is not empty")

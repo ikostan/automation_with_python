@@ -3,7 +3,7 @@ from starter_code_section_7.tests.base_test import BaseTest
 from starter_code_section_7.models.store import StoreModel
 
 
-class ItemTest(BaseTest):
+class ItemIntegrationTest(BaseTest):
     def test_crud(self):
         with self.app_context():
             StoreModel('test').save_to_db()

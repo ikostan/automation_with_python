@@ -2,7 +2,7 @@ from starter_code_section_7.models.user import UserModel
 from starter_code_section_7.tests.base_test import BaseTest
 
 
-class UserTestCase(BaseTest):
+class UserIntegrationTest(BaseTest):
     def test_crud(self):
         with self.app_context():
             user_name = 'uname'
