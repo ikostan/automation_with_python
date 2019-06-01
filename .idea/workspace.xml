@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/integration/integration_base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_7/tests/integration/integration_base_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,12 +16,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_user.py">
+        <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/integration/integration_base_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="106">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding>
-                <element signature="e#0#56#0" expanded="true" />
+                <element signature="e#195#224#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,7 +80,6 @@
         <option value="$PROJECT_DIR$/starter_code_section_7/models/item.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/resources/item.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/resources/store.py" />
-        <option value="$PROJECT_DIR$/starter_code_section_7/tests/integration/integration_base_test.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_store.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/item_test.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/unit/unit_base_test.py" />
@@ -94,6 +93,7 @@
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/unit/models/test_item.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/unit/models/test_user.py" />
         <option value="$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_user.py" />
+        <option value="$PROJECT_DIR$/starter_code_section_7/tests/integration/integration_base_test.py" />
       </list>
     </option>
   </component>
@@ -132,14 +132,6 @@
               <item name="starter_code_section_7" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="integration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code_section_7" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="integration" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -368,7 +360,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.3364929" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.27014217" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45499182" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -850,19 +842,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/integration/integration_base_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/integration/models/test_user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="15">
           <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/integration/integration_base_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="e#195#224#0" expanded="true" />
           </folding>
         </state>
       </provider>
