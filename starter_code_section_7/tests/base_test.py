@@ -12,6 +12,7 @@ from starter_code_section_7.db import db
 
 
 class BaseTest(TestCase):
+
     @classmethod
     def setUpClass(cls):
         # Make sure database exists

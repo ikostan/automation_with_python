@@ -10,7 +10,8 @@ files = {'UNIT': unit, 'INTEGRATION': integration, 'SYSTEM': system}
 
 # execute the file
 for key in files.keys():
-    print('\nRunning {0} test suite:'.format(key))
+    print('\n----------------------------------------------------------------------')
+    print('Running {0} test suite:'.format(key))
     run = runpy.run_path(files[key])
     run.clear()
     time.sleep(1)
