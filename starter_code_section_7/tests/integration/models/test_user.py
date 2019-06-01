@@ -1,5 +1,5 @@
 from starter_code_section_7.models.user import UserModel
-from starter_code_section_7.tests.integration.integration_base_test import BaseTest
+from starter_code_section_7.tests.base_test import BaseTest
 
 
 class UserTestCase(BaseTest):
