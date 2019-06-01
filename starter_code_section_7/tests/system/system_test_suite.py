@@ -4,7 +4,7 @@ import unittest
 
 loader = unittest.TestLoader()
 
-system = 'C:/Users/superadmin/Desktop/Python/automation_with_python/starter_code_section_7/tests/system'
+system = 'C:/Users/superadmin/Desktop/Python/automation_with_python/starter_code_section_7/tests/system/models'
 
 suite_system = loader.discover(system)
 runner = unittest.TextTestRunner(verbosity=2)

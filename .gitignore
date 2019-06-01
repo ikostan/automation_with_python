@@ -204,3 +204,10 @@ starter_code_section_7/tests/unit/models/__pycache__/test_item.cpython-37.pyc
 *.xml
 .idea/workspace.xml
 .idea/workspace.xml
+starter_code_section_7/tests/integration/models/__pycache__/test_integration_item.cpython-37.pyc
+starter_code_section_7/tests/integration/models/__pycache__/test_integration_store.cpython-37.pyc
+starter_code_section_7/tests/integration/models/__pycache__/test_integration_user.cpython-37.pyc
+starter_code_section_7/tests/system/models/__pycache__/test_system_item.cpython-37.pyc
+starter_code_section_7/tests/system/models/__pycache__/test_system_store.cpython-37.pyc
+starter_code_section_7/tests/system/models/__pycache__/test_system_user.cpython-37.pyc
+.idea/workspace.xml
