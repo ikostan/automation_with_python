@@ -70,7 +70,7 @@ class ItemSystemTest(BaseTest):
                 # Item response code
                 self.assertEqual(200, resp.status_code)
                 # Item response message
-                self.assertDictEqual({'name': 'ChromeBook', 'price': 199.99},
+                self.assertDictEqual({'name': self.item_name, 'price': self.item_price},
                                      json.loads(resp.data))
 
     def test_delete_item(self):
@@ -96,7 +96,7 @@ class ItemSystemTest(BaseTest):
                                          'store_id': self.item_id})
 
                 # response message
-                self.assertDictEqual({'name': 'ChromeBook', 'price': 199.99},
+                self.assertDictEqual({'name': self.item_name, 'price': self.item_price},
                                      json.loads(resp.data))
                 # response code
                 self.assertEqual(201, resp.status_code)
@@ -114,13 +114,49 @@ class ItemSystemTest(BaseTest):
                                          'store_id': self.item_id})
 
                 # response error message
-                self.assertDictEqual({'message': "An item with name 'ChromeBook' already exists."},
+                self.assertDictEqual({'message':
+                                      "An item with name '{0}' already exists.".format(
+                                          self.item_name)},
                                      json.loads(resp.data))
                 # response error code
                 self.assertEqual(400, resp.status_code)
 
-    def test_update_item(self):
-        pass
+    def test_put_update_item(self):
+        with self.app() as client:
+            with self.app_context():
+                client.put('/item/{0}'.format(self.item_name),
+                           data={'price': self.item_price,
+                                 'store_id': self.item_id})
+                # update
+                new_price = 299.00
+                resp = client.put('/item/{0}'.format(self.item_name),
+                                  data={'price': new_price,
+                                        'store_id': self.item_id})
+
+                # response message
+                self.assertDictEqual({'name': self.item_name, 'price': new_price},
+                                     json.loads(resp.data))
+                # response code
+                self.assertEqual(200, resp.status_code)
+
+                # test DB
+                self.assertEqual(ItemModel.find_by_name(self.item_name).price, new_price)
+
+    def test_put_item(self):
+        with self.app() as client:
+            with self.app_context():
+                resp = client.put('/item/{0}'.format(self.item_name),
+                                  data={'price': self.item_price,
+                                        'store_id': self.item_id})
+
+                # response message
+                self.assertDictEqual({'name': self.item_name, 'price': self.item_price},
+                                     json.loads(resp.data))
+                # response code
+                self.assertEqual(200, resp.status_code)
+
+                # test DB
+                self.assertEqual(ItemModel.find_by_name(self.item_name).price, self.item_price)
 
     def test_item_list(self):
         pass
