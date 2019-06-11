@@ -44,6 +44,7 @@ class ItemSystemTest(BaseTest):
 
                 # Authorisation error code
                 self.assertEqual(401, resp.status_code)
+
                 # Authorisation error message
                 self.assertDictEqual({'message': 'Could not authorize. Invalid Authorization header!'},
                                      json.loads(resp.data))

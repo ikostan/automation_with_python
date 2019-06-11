@@ -18,6 +18,15 @@ class BaseTest(TestCase):
         # Make sure database exists
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'
         # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:1234@localhost:5432/test'
+
+        '''
+        AssertionError: A setup function was called after the first request was handled.  
+        This usually indicates a bug in the application where a module was not imported and 
+        decorators or other functionality was called too late.
+        '''
+        app.config['DEBUG'] = False
+        app.config['PROPAGATE_EXCEPTIONS'] = True
+
         with app.app_context():
             db.init_app(app)
 
