@@ -3,5 +3,7 @@ from starter_code_section_7.models.item import ItemModel
 
 
 class ItemSystemTest(BaseTest):
-    pass
+    def test_create_item(self):
+        pass
+
 

@@ -10,8 +10,8 @@ class UserSystemTest(BaseTest):
             with self.app_context():
                 username = 'uname'
                 response = client.post('/register',
-                                      data={'username': username,
-                                            'password': 'password'})
+                                       data={'username': username,
+                                             'password': 'password'})
 
                 # Assert response
                 self.assertEqual(response.status_code, 201)
@@ -32,9 +32,9 @@ class UserSystemTest(BaseTest):
                                   'password': password})
 
                 auth_response = client.post('/auth',
-                                           data=json.dumps({'username': username,
-                                                            'password': password}),
-                                           headers={'Content-Type': 'application/json'})
+                                            data=json.dumps({'username': username,
+                                                             'password': password}),
+                                            headers={'Content-Type': 'application/json'})
 
                 self.assertIn('access_token', json.loads(auth_response.data).keys())  # 'access_token'
 
