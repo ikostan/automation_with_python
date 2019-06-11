@@ -8,8 +8,19 @@ import json
 class ItemSystemTest(BaseTest):
 
     def setUp(self):
+        super(ItemSystemTest, self).setUp()
         with self.app() as client:
             with self.app_context():
+
+                # item data
+                self.item_name = 'ChromeBook'
+                self.item_price = 199.99
+                self.item_id = 1
+
+                # create a store
+                store_name = 'Electronics'
+                StoreModel(store_name).save_to_db()
+
                 # create a user
                 user_name = 'user'
                 user_pswd = '1234'
@@ -29,8 +40,7 @@ class ItemSystemTest(BaseTest):
     def test_get_item_no_auth(self):
         with self.app() as client:
             with self.app_context():
-                item_name = 'test item'
-                resp = client.get('item/{}'.format(item_name))
+                resp = client.get('item/{}'.format(self.item_name))
 
                 # Authorisation error code
                 self.assertEqual(401, resp.status_code)
@@ -41,9 +51,7 @@ class ItemSystemTest(BaseTest):
     def test_get_item_not_found(self):
         with self.app() as client:
             with self.app_context():
-
-                item_name = 'test item'
-                resp = client.get('item/{}'.format(item_name), headers=self.header)
+                resp = client.get('item/{}'.format(self.item_name), headers=self.header)
 
                 # Item not found error code
                 self.assertEqual(404, resp.status_code)
@@ -54,14 +62,10 @@ class ItemSystemTest(BaseTest):
     def test_get_item(self):
         with self.app() as client:
             with self.app_context():
-
                 # create an item
-                item_name = 'ChromeBook'
-                item_price = 199.99
-                item_id = 1
-                ItemModel(item_name, item_price, item_id).save_to_db()
+                ItemModel(self.item_name, self.item_price, self.item_id).save_to_db()
 
-                resp = client.get('item/{}'.format(item_name), headers=self.header)
+                resp = client.get('item/{}'.format(self.item_name), headers=self.header)
 
                 # Item response code
                 self.assertEqual(200, resp.status_code)
@@ -72,15 +76,11 @@ class ItemSystemTest(BaseTest):
     def test_delete_item(self):
         with self.app() as client:
             with self.app_context():
-
                 # create an item
-                item_name = 'ChromeBook'
-                item_price = 199.99
-                item_id = 1
-                ItemModel(item_name, item_price, item_id).save_to_db()
-                self.assertIsNotNone(ItemModel.find_by_name(item_name))
+                ItemModel(self.item_name, self.item_price, self.item_id).save_to_db()
+                self.assertIsNotNone(ItemModel.find_by_name(self.item_name))
 
-                resp = client.get('item/{}'.format(item_name), headers=self.header)
+                resp = client.delete('item/{}'.format(self.item_name))
 
                 # response code
                 self.assertEqual(200, resp.status_code)
@@ -89,7 +89,17 @@ class ItemSystemTest(BaseTest):
                                      json.loads(resp.data))
 
     def test_create_item(self):
-        pass
+        with self.app() as client:
+            with self.app_context():
+                resp = client.post('/item/{0}'.format(self.item_name),
+                                   data={'price': self.item_price,
+                                         'store_id': self.item_id})
+
+                # response message
+                self.assertDictEqual({'name': 'ChromeBook', 'price': 199.99},
+                                     json.loads(resp.data))
+                # response code
+                self.assertEqual(201, resp.status_code)
 
     def test_duplicate_item(self):
         pass
