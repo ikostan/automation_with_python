@@ -6,15 +6,31 @@ import json
 
 
 class ItemSystemTest(BaseTest):
-    def test_create_item(self):
-        with self.app() as client:
-            with self.app_context():
-                store_name = "Electronics"
-                store_id = 1
-                StoreModel(store_name).save_to_db()
 
-                item_name = "Chrome Book"
-                item_price = 199.99
+    def test_get_item_no_auth(self):
+        pass
+
+    def test_get_item_not_found(self):
+        pass
+
+    def test_get_item(self):
+        pass
+
+    def test_delete_item(self):
+        pass
+
+    def test_create_item(self):
+        pass
+
+    def test_duplicate_item(self):
+        pass
+
+    def test_update_item(self):
+        pass
+
+    def test_item_list(self):
+        pass
+
 
 
 
