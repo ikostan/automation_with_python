@@ -15,7 +15,7 @@ class ItemSystemTest(BaseTest):
                 # item data
                 self.item_name = 'ChromeBook'
                 self.item_price = 199.99
-                self.item_id = 1
+                self.store_id = 1
 
                 # create a store
                 store_name = 'Electronics'
@@ -63,7 +63,7 @@ class ItemSystemTest(BaseTest):
         with self.app() as client:
             with self.app_context():
                 # create an item
-                ItemModel(self.item_name, self.item_price, self.item_id).save_to_db()
+                ItemModel(self.item_name, self.item_price, self.store_id).save_to_db()
 
                 resp = client.get('item/{}'.format(self.item_name), headers=self.header)
 
@@ -77,7 +77,7 @@ class ItemSystemTest(BaseTest):
         with self.app() as client:
             with self.app_context():
                 # create an item
-                ItemModel(self.item_name, self.item_price, self.item_id).save_to_db()
+                ItemModel(self.item_name, self.item_price, self.store_id).save_to_db()
                 self.assertIsNotNone(ItemModel.find_by_name(self.item_name))
 
                 resp = client.delete('item/{}'.format(self.item_name))
@@ -93,7 +93,7 @@ class ItemSystemTest(BaseTest):
             with self.app_context():
                 resp = client.post('/item/{0}'.format(self.item_name),
                                    data={'price': self.item_price,
-                                         'store_id': self.item_id})
+                                         'store_id': self.store_id})
 
                 # response message
                 self.assertDictEqual({'name': self.item_name, 'price': self.item_price},
@@ -106,12 +106,12 @@ class ItemSystemTest(BaseTest):
             with self.app_context():
                 client.post('/item/{0}'.format(self.item_name),
                             data={'price': self.item_price,
-                                  'store_id': self.item_id})
+                                  'store_id': self.store_id})
 
                 # duplicate
                 resp = client.post('/item/{0}'.format(self.item_name),
                                    data={'price': self.item_price,
-                                         'store_id': self.item_id})
+                                         'store_id': self.store_id})
 
                 # response error message
                 self.assertDictEqual({'message':
@@ -126,12 +126,15 @@ class ItemSystemTest(BaseTest):
             with self.app_context():
                 client.put('/item/{0}'.format(self.item_name),
                            data={'price': self.item_price,
-                                 'store_id': self.item_id})
+                                 'store_id': self.store_id})
+                # test DB
+                self.assertEqual(ItemModel.find_by_name(self.item_name).price, self.item_price)
+
                 # update
                 new_price = 299.00
                 resp = client.put('/item/{0}'.format(self.item_name),
                                   data={'price': new_price,
-                                        'store_id': self.item_id})
+                                        'store_id': self.store_id})
 
                 # response message
                 self.assertDictEqual({'name': self.item_name, 'price': new_price},
@@ -147,7 +150,7 @@ class ItemSystemTest(BaseTest):
             with self.app_context():
                 resp = client.put('/item/{0}'.format(self.item_name),
                                   data={'price': self.item_price,
-                                        'store_id': self.item_id})
+                                        'store_id': self.store_id})
 
                 # response message
                 self.assertDictEqual({'name': self.item_name, 'price': self.item_price},
@@ -159,8 +162,33 @@ class ItemSystemTest(BaseTest):
                 self.assertEqual(ItemModel.find_by_name(self.item_name).price, self.item_price)
 
     def test_item_list(self):
-        pass
+        with self.app() as client:
+            with self.app_context():
+                # create new items
+                client.put('/item/{0}'.format(self.item_name),
+                           data={'price': self.item_price,
+                                 'store_id': self.store_id})
 
+                item_name_2 = "Flush Memory"
+                item_price_2 = 99.99
+                client.put('/item/{0}'.format(item_name_2),
+                           data={'price': item_price_2,
+                                 'store_id': self.store_id})
 
+                item_name_3 = "Keyboard"
+                item_price_3 = 125.88
+                client.put('/item/{0}'.format(item_name_3),
+                           data={'price': item_price_3,
+                                 'store_id': self.store_id})
 
+                resp = client.get('/items')
+
+                # response code
+                self.assertEqual(200, resp.status_code)
+
+                # response message
+                self.assertDictEqual({'items': [{'name': self.item_name, 'price': self.item_price},
+                                                {'name': item_name_2, 'price': item_price_2},
+                                                {'name': item_name_3, 'price': item_price_3}]},
+                                     json.loads(resp.data))
 
