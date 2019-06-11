@@ -102,7 +102,22 @@ class ItemSystemTest(BaseTest):
                 self.assertEqual(201, resp.status_code)
 
     def test_duplicate_item(self):
-        pass
+        with self.app() as client:
+            with self.app_context():
+                client.post('/item/{0}'.format(self.item_name),
+                            data={'price': self.item_price,
+                                  'store_id': self.item_id})
+
+                # duplicate
+                resp = client.post('/item/{0}'.format(self.item_name),
+                                   data={'price': self.item_price,
+                                         'store_id': self.item_id})
+
+                # response error message
+                self.assertDictEqual({'message': "An item with name 'ChromeBook' already exists."},
+                                     json.loads(resp.data))
+                # response error code
+                self.assertEqual(400, resp.status_code)
 
     def test_update_item(self):
         pass

@@ -230,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_system_item.ItemSystemTest.test_create_item">
+  <component name="RunManager" selected="Python tests.Unittests for test_system_item.ItemSystemTest.test_duplicate_item">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -280,7 +280,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_system_item.ItemSystemTest.test_get_item" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_system_item.ItemSystemTest.test_duplicate_item" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="automation_with_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,7 +290,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_system_item.ItemSystemTest.test_get_item&quot;" />
+      <option name="_new_target" value="&quot;test_system_item.ItemSystemTest.test_duplicate_item&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -324,11 +324,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for test_system_item.ItemSystemTest.test_duplicate_item" />
         <item itemvalue="Python tests.Unittests for test_system_item.ItemSystemTest.test_create_item" />
         <item itemvalue="Python tests.Unittests for test_system_item.ItemSystemTest.test_delete_item" />
         <item itemvalue="Python tests.Unittests in test_system_item.py" />
         <item itemvalue="Python tests.Unittests in test_system_store.py" />
-        <item itemvalue="Python tests.Unittests for test_system_item.ItemSystemTest.test_get_item" />
       </list>
     </recent_temporary>
   </component>
