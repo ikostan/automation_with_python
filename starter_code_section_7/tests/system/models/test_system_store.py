@@ -24,7 +24,7 @@ class StoreSystemTest(BaseTest):
                 response = client.post('/store/{0}'.format(store_name))
                 self.assertEqual(response.status_code, 400)
                 self.assertDictEqual({'message':
-                                      'A store with name "{0}" already exists.'.format(store_name)},
+                                      'A store with name \'{0}\' already exists.'.format(store_name)},
                                      json.loads(response.data))
 
     def test_delete_store(self):
@@ -69,24 +69,6 @@ class StoreSystemTest(BaseTest):
                 item_price = 99.99
                 ItemModel(item_name, item_price, store_id).save_to_db()
 
-                response = client.get('/store/{0}'.format(store_name))
-                self.assertEqual(response.status_code, 200)
-                self.assertDictEqual({'name': store_name,
-                                      'items': [{'name': item_name,
-                                                 'price': item_price}]},
-                                     json.loads(response.data))
-
-    def test_store_list(self):
-        with self.app() as client:
-            with self.app_context():
-                store_name = 'test_store'
-                store_id = 1
-                client.post('/store/{0}'.format(store_name))
-
-                item_name = 'Tablet'
-                item_price = 99.99
-                ItemModel(item_name, item_price, store_id).save_to_db()
-
                 item_name2 = 'Chrome Book'
                 item_price2 = 199.99
                 ItemModel(item_name2, item_price2, store_id).save_to_db()
@@ -98,7 +80,39 @@ class StoreSystemTest(BaseTest):
                                                 {'name': item_name2, 'price': item_price2}]},
                                      json.loads(response.data))
 
+    def test_store_list(self):
+        with self.app() as client:
+            with self.app_context():
+                store_name_1 = 'test_store_1'
+                store_name_2 = 'test_store_2'
+                store_name_3 = 'test_store_3'
+
+                client.post('/store/{0}'.format(store_name_1))
+                client.post('/store/{0}'.format(store_name_2))
+                client.post('/store/{0}'.format(store_name_3))
+
+                response = client.get('/stores')
+                self.assertEqual(response.status_code, 200)
+                self.assertDictEqual({'stores': [{'items': [], 'name': store_name_1},
+                                                 {'items': [], 'name': store_name_2},
+                                                 {'items': [], 'name': store_name_3}]},
+                                     json.loads(response.data))
+
     def test_store_list_with_items(self):
         with self.app() as client:
             with self.app_context():
-                pass
+                store_name = 'test_store'
+                store_id = 1
+                client.post('/store/{0}'.format(store_name))
+
+                item_name = 'Tablet'
+                item_price = 99.99
+                ItemModel(item_name, item_price, store_id).save_to_db()
+
+                response = client.get('/stores')
+                self.assertEqual(response.status_code, 200)
+                self.assertDictEqual({'stores': [{'items': [{'name': item_name,
+                                                             'price': item_price}],
+                                                  'name': store_name}]},
+                                     json.loads(response.data))
+
