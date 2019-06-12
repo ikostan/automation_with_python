@@ -17,5 +17,20 @@ This course is jam packed with all the latest technologies for you to use profes
 - Selenium WebDriver for automated browser tests;
 - Git and Travis for continuous integration of your project.
 
+
+### Sections:
+
+| No. | Section                                                                                                    | GitHub Link |
+|-----|-----------------------------------------------------------------------------------------------------------------|-------------|
+|1    |A Full Python Refresher |[Solution](https://github.com/ikostan/automation_with_python/tree/master/IntroToPython)|
+|2    |Your first automated software test |[Solution](https://github.com/ikostan/automation_with_python/tree/master/blog_console_app)|
+|3    |Testing a Flask Endpoint |[Solution](https://github.com/ikostan/automation_with_python/tree/master/flask_app)|
+|4    |REST API Testing, Part I |[Solution](https://github.com/ikostan/automation_with_python/tree/master/starter_code_section_5)|
+|5    |REST API Testing, Part II |[Solution](https://github.com/ikostan/automation_with_python/tree/master/starter_code_section_6)|
+|6    |System testing a REST API |[Solution](https://github.com/ikostan/automation_with_python/tree/master/starter_code_section_7)|
+|7    |System testing with Postman and Newman |[Solution](https://github.com/ikostan/automation_with_python/tree/master/starter_code_section_8)|
+|8    |Continuous Integration with Travis CI |[Solution](https://github.com/ikostan/automation_with_python)|
+|9    |Acceptance testing and browser automation with Selenium |[Solution](https://github.com/ikostan/automation_with_python)|
+
 ### Source: 
 https://www.udemy.com/automated-software-testing-with-python
