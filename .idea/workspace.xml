@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_7/tests/base_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/system/models/test_system_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_7/tests/system/models/test_system_item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code_section_7/tests/unit/unit_test_suite.py" beforeDir="false" />
-    </list>
+    <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/base_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            <state relative-caret-position="-238">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding>
                 <element signature="e#195#224#0" expanded="true" />
               </folding>
@@ -134,34 +130,7 @@
             <path>
               <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
               <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code_section_7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code_section_7" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code_section_7" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="integration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code_section_7" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code_section_7" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="starter_code_section_8" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -316,9 +285,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_tests - 2019.06.11 at 16h 37m 02s.xml">
-      <configuration name="Unittests in tests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_tests - 2019.06.11 at 16h 42m 00s.xml">
       <configuration name="Unittests in tests" configurationId="tests" />
     </history-entry>
@@ -346,6 +312,9 @@
     <history-entry file="Unittests_in_tests - 2019.06.11 at 16h 50m 18s.xml">
       <configuration name="Unittests in tests" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_tests - 2019.06.11 at 16h 51m 42s.xml">
+      <configuration name="Unittests in tests" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -358,14 +327,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.19033675" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.2635432" />
       <window_info id="Structure" order="1" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.43759874" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.43759874" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45499182" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -883,8 +851,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/starter_code_section_7/tests/base_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        <state relative-caret-position="-238">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
           <folding>
             <element signature="e#195#224#0" expanded="true" />
           </folding>
