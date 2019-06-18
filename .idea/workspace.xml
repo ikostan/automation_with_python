@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e43994f-9222-42a8-9844-a076cc1a7fc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/starter_code_section_8/Stores_REST_API.postman_environment.json" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_8/Postman_exports/Stores_REST_API.postman_environment.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code_section_8/User_Create_store_and_item.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code_section_8/Postman_exports/User_Create_store_and_item.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,27 +15,7 @@
     <favorites_list name="automation_with_python" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/starter_code_section_8/video_code/models/store.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/starter_code_section_8/Postman_exports/User_Create_store_and_item.postman_collection.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/starter_code_section_8/Postman_exports/Stores_REST_API.postman_environment.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -129,12 +109,6 @@
               <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
               <item name="starter_code_section_8" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="automation_with_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automation_with_python" type="462c0819:PsiDirectoryNode" />
-              <item name="starter_code_section_8" type="462c0819:PsiDirectoryNode" />
-              <item name="Postman_exports" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -144,24 +118,24 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/starter_code_section_8/video_code" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/starter_code_section_8" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.3128991" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_7\tests\system\models" />
-      <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_7\tests\unit" />
-      <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_7\tests" />
-      <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_6\tests\integration" />
-      <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\blog\tests" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_7\tests\integration" />
       <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_7\tests\system" />
       <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_7\tests" />
       <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_7\tests\unit" />
       <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_8\Postman_exports" />
+      <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_7\tests\system\models" />
+      <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_7\tests\unit" />
+      <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_7\tests" />
+      <recent name="C:\Users\superadmin\Desktop\Python\automation_with_python\starter_code_section_6\tests\integration" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -249,8 +223,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.app" />
-      <item itemvalue="Python tests.Unittests in tests" />
       <item itemvalue="Python tests.Unittests for test_system_item.ItemSystemTest.test_get_item_no_auth" />
+      <item itemvalue="Python tests.Unittests in tests" />
     </list>
     <recent_temporary>
       <list>
@@ -336,7 +310,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.29575402" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973262" visible="true" weight="0.25256222" />
       <window_info id="Structure" order="1" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info id="Favorites" order="2" sideWeight="0.5026738" side_tool="true" weight="0.20179372" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -806,18 +780,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/starter_code_section_8/Postman_exports/Stores_REST_API.postman_environment.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starter_code_section_8/Postman_exports/User_Create_store_and_item.postman_collection.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/starter_code_section_8/video_code/models/store.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code_section_8/Postman_exports/User_Create_store_and_item.postman_collection.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/starter_code_section_8/Postman_exports/Stores_REST_API.postman_environment.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
