@@ -41,3 +41,4 @@ venv/Lib/
 .idea/automation_with_python.iml
 .idea/misc.xml
 .idea/workspace.xml
+video_code_section_10/tests/acceptance/__pycache__/
