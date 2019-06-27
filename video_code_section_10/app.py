@@ -42,5 +42,33 @@ def see_post(title):
     return render_template('post.html', post=None)
 
 
+def shutdown_server():
+    '''
+    The Werkzeug server that is used by the app.run() command
+    can be shut down starting with Werkzeug 0.8.
+    This can be helpful for small applications that should serve as a
+    frontend to a simple library on a user's computer.
+    :return:
+    '''
+    func = request.environ.get('werkzeug.server.shutdown')
+    if func is None:
+        raise RuntimeError('Not running with the Werkzeug Server')
+    func()
+
+
+@app.route('/shutdown', methods=['POST'])
+def shutdown():
+    '''
+    You can shutdown the server by calling this function.
+    The shutdown functionality is written in a way that the server
+    will finish handling the current request and then stop.
+
+    Source: http://flask.pocoo.org/snippets/67/
+    :return:
+    '''
+    shutdown_server()
+    return 'Server shutting down...'
+
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
