@@ -1,5 +1,6 @@
 from behave import *
 from selenium import webdriver
+from video_code_section_10.tests.acceptance.config import home_url, web_driver_path
 
 use_step_matcher('re')
 
@@ -7,14 +8,26 @@ use_step_matcher('re')
 @given('I am on the home page')
 def step_impl(context):
 
-    path = 'C:/Users/superadmin/Desktop/Python/automation_with_python/' \
-           'video_code_section_10/webdriver/win32/74.0.3729.6/chromedriver.exe'
-    context.browser = webdriver.Chrome(path)
-    context.browser.get('http://127.0.0.1:5000')
+    context.browser = webdriver.Chrome(web_driver_path)
+    context.browser.get(home_url)
+
+
+@given('I am on the blog page')
+def step_impl(context):
+
+    context.browser = webdriver.Chrome(web_driver_path)
+    context.browser.get(home_url + '/blog')
 
 
 @then('I am on the blog page')
 def step_impl(context):
 
-    expected_url = 'http://127.0.0.1:5000/blog'
+    expected_url = home_url + '/blog'
+    assert context.browser.current_url == expected_url
+
+
+@then('I am on the home page')
+def step_impl(context):
+
+    expected_url = home_url + '/'
     assert context.browser.current_url == expected_url
