@@ -42,9 +42,5 @@ venv/Lib/
 .idea/misc.xml
 .idea/workspace.xml
 video_code_section_10/tests/acceptance/__pycache__/
-video_code_section_10/tests/acceptance/locators/__pycache__/__init__.cpython-37.pyc
-video_code_section_10/tests/acceptance/locators/__pycache__/base_page.cpython-37.pyc
-video_code_section_10/tests/acceptance/page_model/__pycache__/base_page.cpython-37.pyc
-video_code_section_10/tests/acceptance/page_model/__pycache__/__init__.cpython-37.pyc
-*.pyc
-video_code_section_10/tests/acceptance/locators/__pycache__/blog_page.cpython-37.pyc
+video_code_section_10/tests/acceptance/locators/__pycache__/
+video_code_section_10/tests/acceptance/page_model/__pycache__/
