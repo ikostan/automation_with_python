@@ -7,5 +7,5 @@ use_step_matcher('re')
 def step_impl(context, link_id):
     
     #  in this case link_id = "blog-link" or "home-link"
-    link = context.browser.find_element_by_id(link_id)
+    link = context.driver.find_element_by_id(link_id)
     link.click()
