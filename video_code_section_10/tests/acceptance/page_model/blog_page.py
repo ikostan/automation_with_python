@@ -21,5 +21,5 @@ class BlogPage(BasePage):
         return self.driver.find_element(*BlogPageLocator.ADD_POST_LINK)
 
     @property
-    def blog_link(self):
+    def home_link(self):
         return self.driver.find_element(*BlogPageLocator.NAVIGATION_LINK)
