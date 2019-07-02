@@ -13,7 +13,7 @@ use_step_matcher('re')
 def step_impl(context):
 
     context.driver = webdriver.Chrome(web_driver_path)
-    page = HomePage(context.driver)
+    page = HomePage(context.driver.maximize_window())
     context.driver.get(page.url)
 
 
@@ -21,7 +21,7 @@ def step_impl(context):
 def step_impl(context):
 
     context.driver = webdriver.Chrome(web_driver_path)
-    page = BlogPage(context.driver)
+    page = BlogPage(context.driver.maximize_window())
     context.driver.get(page.url)
 
 
