@@ -3,6 +3,7 @@ from selenium import webdriver
 from video_code_section_10.tests.acceptance.config import web_driver_path
 from video_code_section_10.tests.acceptance.page_model.home_page import HomePage
 from video_code_section_10.tests.acceptance.page_model.blog_page import BlogPage
+from video_code_section_10.tests.acceptance.page_model.post_page import PostPage
 
 
 use_step_matcher('re')
@@ -13,6 +14,14 @@ def step_impl(context):
 
     context.driver = webdriver.Chrome(web_driver_path)
     page = HomePage(context.driver.maximize_window())
+    context.driver.get(page.url)
+
+
+@given('I am on the "post" page')
+def step_impl(context):
+
+    context.driver = webdriver.Chrome(web_driver_path)
+    page = PostPage(context.driver.maximize_window())
     context.driver.get(page.url)
 
 

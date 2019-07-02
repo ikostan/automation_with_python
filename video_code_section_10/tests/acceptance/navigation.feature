@@ -12,3 +12,8 @@ Feature: Test navigation between pages we
     When I click on the "Go to home" link
     Then I am on the "home" page
 
+  Scenario: Post can go to Blog
+    Given I am on the "post" page
+    When I click on the "Back to blog" link
+    Then I am on the "blog" page
+
