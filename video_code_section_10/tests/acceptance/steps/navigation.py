@@ -1,6 +1,6 @@
 from behave import *
 from selenium import webdriver
-from video_code_section_10.tests.acceptance.config import web_driver_path, home_url
+from video_code_section_10.tests.acceptance.config import web_driver_path
 from video_code_section_10.tests.acceptance.page_model.home_page import HomePage
 from video_code_section_10.tests.acceptance.page_model.blog_page import BlogPage
 
@@ -19,7 +19,7 @@ def step_impl(context):
 @then('I am on the "blog" page')
 def step_impl(context):
 
-    expected_url = home_url + '/blog'
+    expected_url = BlogPage(context.driver).url
     assert context.driver.current_url == expected_url
 
 
@@ -34,5 +34,5 @@ def step_impl(context):
 @then('I am on the "home" page')
 def step_impl(context):
 
-    expected_url = home_url + '/'
+    expected_url = HomePage(context.driver).url
     assert context.driver.current_url == expected_url
