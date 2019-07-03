@@ -17,8 +17,8 @@ class BlogTestCase(unittest.TestCase):
         new_blog.create_post('Test post', 'Test content')
         # Tests
         self.assertEqual(1, len(new_blog.posts))
-        self.assertEqual('Test Post', new_blog.posts[0].title)
-        self.assertEqual('Test content', new_blog.posts[0].content)
+        self.assertEqual('Test Post', new_blog.posts[0].title_field)
+        self.assertEqual('Test content', new_blog.posts[0].content_field)
 
     def test_json(self):
         title = 'Test'

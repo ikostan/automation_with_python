@@ -3,7 +3,7 @@ from selenium import webdriver
 from video_code_section_10.tests.acceptance.config import web_driver_path
 from video_code_section_10.tests.acceptance.page_model.home_page import HomePage
 from video_code_section_10.tests.acceptance.page_model.blog_page import BlogPage
-from video_code_section_10.tests.acceptance.page_model.post_page import PostPage
+from video_code_section_10.tests.acceptance.page_model.post_page import NewPostPage
 
 
 use_step_matcher('re')
@@ -21,7 +21,7 @@ def step_impl(context):
 def step_impl(context):
 
     context.driver = webdriver.Chrome(web_driver_path)
-    page = PostPage(context.driver.maximize_window())
+    page = NewPostPage(context.driver.maximize_window())
     context.driver.get(page.url)
 
 
@@ -45,3 +45,4 @@ def step_impl(context):
 
     expected_url = HomePage(context.driver).url
     assert context.driver.current_url == expected_url
+

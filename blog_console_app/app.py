@@ -40,7 +40,7 @@ class App:
             self.print_post(post)
 
     def print_post(self, post):
-        print(self.POST_TEMPLATE.format(post.title, post.content))
+        print(self.POST_TEMPLATE.format(post.title_field, post.content_field))
 
     def ask_create_post(self):
         blog_name = input('Enter the blog_console_app title you want to write a post in: ')

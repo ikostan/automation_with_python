@@ -26,3 +26,15 @@ def step_impl(context):
     page = BlogPage(context.driver)
     assert page.posts_section.is_displayed()
 
+
+@then('I can see there is a post with title "(.*)" in the posts section')
+def step_impl(context, title):
+
+    page = BlogPage(context.driver)
+    post_with_title = [post for post in page.posts if post.text == title]
+
+    if len(post_with_title) == 0:
+        raise RuntimeError('There is no such post {0}'.format(title))
+    else:
+        assert all([post.is_displayed() for post in post_with_title if post.text == title])
+

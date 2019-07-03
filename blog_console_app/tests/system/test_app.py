@@ -82,8 +82,8 @@ class AppTestCase(unittest.TestCase):
             self.app.ask_create_post()
             self.assertIsNotNone(self.app.blogs["Blog Name"].posts[0])
             self.assertDictEqual(expected, self.app.blogs["Blog Name"].posts[0].json())
-            self.assertEqual(self.app.blogs["Blog Name"].posts[0].title, post_title)
-            self.assertEqual(self.app.blogs["Blog Name"].posts[0].content, post_content)
+            self.assertEqual(self.app.blogs["Blog Name"].posts[0].title_field, post_title)
+            self.assertEqual(self.app.blogs["Blog Name"].posts[0].content_field, post_content)
 
     def test_menu_create_blog(self):
         with patch('builtins.input') as mocked_input:
@@ -94,7 +94,7 @@ class AppTestCase(unittest.TestCase):
             main.main()
             self.assertIsNotNone(main.app.blogs[blog_name])
             self.assertEqual(main.app.blogs[blog_name].author, author_name)
-            self.assertEqual(main.app.blogs[blog_name].title, blog_name)
+            self.assertEqual(main.app.blogs[blog_name].title_field, blog_name)
 
     def test_menu_calls_ask_create_blog(self):
         with patch('builtins.input') as mocked_input:
